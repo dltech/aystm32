@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ay-3-8912)(type Legacy)(uri ${KIPRJMOD}/ay-3-8912.lib)(options "")(descr ""))
+  (lib (name aydongle-rescue)(type Legacy)(uri ${KIPRJMOD}/aydongle-rescue.lib)(options "")(descr ""))
+  (lib (name aydongle)(type Legacy)(uri ${KIPRJMOD}/aydongle.lib)(options "")(descr ""))
+)
