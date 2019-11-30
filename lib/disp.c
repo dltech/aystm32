@@ -10,6 +10,11 @@ void sdInit()
 //             обработчик по окончанию (так же структура состояние отслеживать придется или по регистрам только удастся если да то круто)
 }
 
+void blockingSengSeq()
+{
+    
+}
+
 void fromDotMatrixToData()
 {
     for(int i=0 ; i<BUFFER_SIZE)

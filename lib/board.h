@@ -1,4 +1,5 @@
 #include "gpio.h"
+#include "i2c.h"
 
 #define SYSCLKHZ    72000000
 
@@ -20,13 +21,15 @@
 #define BUTTON_CLK_PORT GPIOA
 #define BUTTON_CLK_PIN  GPIO8
 
-#define AUDIO_PORT GPIOC
-#define AUDIO_UPDN GPIO14
-#define AUDIO_CLK  GPIO15
+#define AUDIO_PORT  GPIOC
+#define AUDIO_UPDN  GPIO14
+#define AUDIO_CLK   GPIO15
 
-#define USBPORT    GPIOA
-#define USBDM      GPIO11
-#define USBDP      GPIO12
+#define USBPORT     GPIOA
+#define USBDM       GPIO11
+#define USBDP       GPIO12
+
+#define DISPI2C     I2C1
 
 // сразу задаю всё тактирование используемой периферии
 #define BOARD_AHB   RCC_AHBENR_DMA1EN
