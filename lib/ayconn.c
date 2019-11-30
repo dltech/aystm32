@@ -9,7 +9,7 @@ void initAy()
 {
     // сперва порты
     gpio_mode_setup(AYDATAPORT, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AY_DATA_IOS);
-    gpio_set_output_options(DISPLAY_PORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_DATA_IOS);
+    gpio_set_output_options(AYDATAPORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_DATA_IOS);
     gpio_mode_setup(AY_SERV_PORT, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AY_BC1 | AY_BDIR | AY_RESET);
     gpio_set_output_options(AY_SERV_PORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_BC1 | AY_BDIR | AY_RESET);
     gpio_mode_setup(AY_SERV_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, AY_CLOCK);

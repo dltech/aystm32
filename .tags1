@@ -4,27 +4,4 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-SYSCLKHZ	/home/nefraer/src/AYstm32/lib/board.h	/^#define SYSCLKHZ /;"	macro	line:3
-AY_DATA_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_DATA_PORT /;"	macro	line:5
-AY_DATA_IOS	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_DATA_IOS /;"	macro	line:6
-AY_SERV_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_SERV_PORT /;"	macro	line:7
-AY_BC1	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_BC1 /;"	macro	line:8
-AY_BDIR	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_BDIR /;"	macro	line:9
-AY_RESET	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_RESET /;"	macro	line:10
-AY_CLOCK	/home/nefraer/src/AYstm32/lib/board.h	/^#define AY_CLOCK /;"	macro	line:11
-DISPLAY_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define DISPLAY_PORT /;"	macro	line:13
-DISP_PINS	/home/nefraer/src/AYstm32/lib/board.h	/^#define DISP_PINS /;"	macro	line:14
-BUTTON_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define BUTTON_PORT /;"	macro	line:16
-BUTTON_L	/home/nefraer/src/AYstm32/lib/board.h	/^#define BUTTON_L /;"	macro	line:17
-BUTTON_R	/home/nefraer/src/AYstm32/lib/board.h	/^#define BUTTON_R /;"	macro	line:18
-BUTTON_CLK_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define BUTTON_CLK_PORT /;"	macro	line:20
-BUTTON_CLK_PIN	/home/nefraer/src/AYstm32/lib/board.h	/^#define BUTTON_CLK_PIN /;"	macro	line:21
-AUDIO_PORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define AUDIO_PORT /;"	macro	line:23
-AUDIO_UPDN	/home/nefraer/src/AYstm32/lib/board.h	/^#define AUDIO_UPDN /;"	macro	line:24
-AUDIO_CLK	/home/nefraer/src/AYstm32/lib/board.h	/^#define AUDIO_CLK /;"	macro	line:25
-USBPORT	/home/nefraer/src/AYstm32/lib/board.h	/^#define USBPORT /;"	macro	line:27
-USBDM	/home/nefraer/src/AYstm32/lib/board.h	/^#define USBDM /;"	macro	line:28
-USBDP	/home/nefraer/src/AYstm32/lib/board.h	/^#define USBDP /;"	macro	line:29
-BOARD_AHB	/home/nefraer/src/AYstm32/lib/board.h	/^#define BOARD_AHB /;"	macro	line:32
-BOARD_APB1	/home/nefraer/src/AYstm32/lib/board.h	/^#define BOARD_APB1 /;"	macro	line:33
-BOARD_APB2	/home/nefraer/src/AYstm32/lib/board.h	/^#define BOARD_APB2 /;"	macro	line:34
+fromDotMatrixToData	/home/dltech/src/aystm32/lib/disp.c	/^void fromDotMatrixToData()$/;"	function	line:1
