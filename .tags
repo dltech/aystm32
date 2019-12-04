@@ -3166,6 +3166,7 @@ CEC_ISR_TXUDR	libopencm3/include/libopencm3/stm32/f0/cec.h	84;"	d
 CEC_RXDR	libopencm3/include/libopencm3/stm32/f0/cec.h	49;"	d
 CEC_TXDR	libopencm3/include/libopencm3/stm32/f0/cec.h	48;"	d
 CFILES	aystm/Makefile	/^CFILES = my-project.c$/;"	m
+<<<<<<< HEAD
 CG0_FLEXCAN0	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG0_FLEXCAN0 = 0,$/;"	e	enum:ccm_clock_gate
 CG100_RESERVED	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG100_RESERVED,$/;"	e	enum:ccm_clock_gate
 CG101_OTP_CTRL	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG101_OTP_CTRL,$/;"	e	enum:ccm_clock_gate
@@ -6027,6 +6028,10 @@ DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l0/memorymap.h	86;"	d
 DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l1/memorymap.h	111;"	d
 DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l4/memorymap.h	118;"	d
 DES_BASE	libopencm3/include/libopencm3/msp432/e4/memorymap.h	76;"	d
+=======
+COMMAND_CONTROL_BYTE	lib/disp.h	4;"	d
+CSTD	rules.mk	/^CSTD ?= -std=c99$/;"	m
+>>>>>>> cf0b8b384bead60eae36921dc70683d51c1fda23
 DEVICE	aystm/Makefile	/^DEVICE=stm32f407vgt6$/;"	m
 DEVICES_DATA	libopencm3/mk/genlink-config.mk	/^DEVICES_DATA = $(OPENCM3_DIR)\/ld\/devices.data$/;"	m
 DFSDM0_IRQHandler	libopencm3/include/libopencmsis/stm32/l4/irqhandlers.h	70;"	d
@@ -21172,6 +21177,7 @@ PWR_SR2_VOSF	libopencm3/include/libopencm3/stm32/l4/pwr.h	150;"	d
 Q	libopencm3/Makefile	/^Q := @$/;"	m
 Q	libopencm3/tests/rules.mk	/^Q	:= @$/;"	m
 Q	rules.mk	/^Q	:= @$/;"	m
+<<<<<<< HEAD
 QEI0_BASE	libopencm3/include/libopencm3/msp432/e4/memorymap.h	150;"	d
 QEI0_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	97;"	d
 QEI0_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	22;"	d
@@ -28735,6 +28741,9 @@ SDRAM_NORMAL	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^enum 
 SDRAM_PALL	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^enum fmc_sdram_command { SDRAM_CLK_CONF, SDRAM_NORMAL, SDRAM_PALL,$/;"	e	enum:fmc_sdram_command
 SDRAM_POWER_DOWN	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^			 SDRAM_SELF_REFRESH, SDRAM_POWER_DOWN };$/;"	e	enum:fmc_sdram_command
 SDRAM_SELF_REFRESH	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^			 SDRAM_SELF_REFRESH, SDRAM_POWER_DOWN };$/;"	e	enum:fmc_sdram_command
+=======
+RAM_CONTROL_BYTE	lib/disp.h	5;"	d
+>>>>>>> cf0b8b384bead60eae36921dc70683d51c1fda23
 SD_ADDR	lib/disp.h	3;"	d
 SEG_LCD_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	45;"	d
 SEMA4_BASE	libopencm3/include/libopencm3/vf6xx/memorymap.h	37;"	d
