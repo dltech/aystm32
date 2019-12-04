@@ -1,8 +1,8 @@
 #include "inttypes.h"
 
 #define SD_ADDR     0xff
-#define COMMAND_EN  (1<<7)
-#define DATA_EN     (0<<7)
+#define COMMAND_CONTROL_BYTE    0x80
+#define RAM_CONTROL_BYTE        0xc0
 
 #define INIT_COMMANDS 10
 uint8_t initSeq[INIT_COMMANDS] = {};

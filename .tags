@@ -28,9 +28,8 @@ BUTTON_PORT	lib/board.h	16;"	d
 BUTTON_R	lib/board.h	18;"	d
 CC	rules.mk	/^CC	= $(PREFIX)gcc$/;"	m
 CFILES	aystm/Makefile	/^CFILES = my-project.c$/;"	m
-COMMAND_EN	lib/disp.h	4;"	d
+COMMAND_CONTROL_BYTE	lib/disp.h	4;"	d
 CSTD	rules.mk	/^CSTD ?= -std=c99$/;"	m
-DATA_EN	lib/disp.h	5;"	d
 DEVICE	aystm/Makefile	/^DEVICE=stm32f407vgt6$/;"	m
 DISPLAY_PORT	lib/board.h	13;"	d
 DISP_PINS	lib/board.h	14;"	d
@@ -51,6 +50,7 @@ OPT	rules.mk	/^OPT ?= -Os$/;"	m
 PREFIX	rules.mk	/^PREFIX	?= arm-none-eabi-$/;"	m
 PROJECT	aystm/Makefile	/^PROJECT = awesomesauce$/;"	m
 Q	rules.mk	/^Q	:= @$/;"	m
+RAM_CONTROL_BYTE	lib/disp.h	5;"	d
 SD_ADDR	lib/disp.h	3;"	d
 SHARED_DIR	aystm/Makefile	/^SHARED_DIR = ..\/my-common-code$/;"	m
 SYSCLKHZ	lib/board.h	3;"	d
