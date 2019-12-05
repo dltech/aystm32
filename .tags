@@ -2488,7 +2488,7 @@ BPM_BASE	libopencm3/include/libopencm3/sam/4l/memorymap.h	79;"	d
 BPM_IRQHandler	libopencm3/include/libopencmsis/sam/4l/irqhandlers.h	46;"	d
 BSCIF_BASE	libopencm3/include/libopencm3/sam/4l/memorymap.h	80;"	d
 BSCIF_IRQHandler	libopencm3/include/libopencmsis/sam/4l/irqhandlers.h	47;"	d
-BUFFER_SIZE	lib/disp.h	14;"	d
+BUFFER_SIZE	lib/disp.h	16;"	d
 BUILD_DIR	aystm/Makefile	/^BUILD_DIR = bin$/;"	m
 BUILD_DIR	libopencm3/tests/rules.mk	/^BUILD_DIR ?= bin$/;"	m
 BUILD_DIR	rules.mk	/^BUILD_DIR ?= bin$/;"	m
@@ -3166,7 +3166,6 @@ CEC_ISR_TXUDR	libopencm3/include/libopencm3/stm32/f0/cec.h	84;"	d
 CEC_RXDR	libopencm3/include/libopencm3/stm32/f0/cec.h	49;"	d
 CEC_TXDR	libopencm3/include/libopencm3/stm32/f0/cec.h	48;"	d
 CFILES	aystm/Makefile	/^CFILES = my-project.c$/;"	m
-<<<<<<< HEAD
 CG0_FLEXCAN0	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG0_FLEXCAN0 = 0,$/;"	e	enum:ccm_clock_gate
 CG100_RESERVED	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG100_RESERVED,$/;"	e	enum:ccm_clock_gate
 CG101_OTP_CTRL	libopencm3/include/libopencm3/vf6xx/ccm.h	/^	CG101_OTP_CTRL,$/;"	e	enum:ccm_clock_gate
@@ -4808,7 +4807,7 @@ CM_SCS_SYST_CVR	libopencm3/include/libopencm3/cm3/scs.h	199;"	d
 CM_SCS_SYST_RVR	libopencm3/include/libopencm3/cm3/scs.h	192;"	d
 CODESPACESRAM_BASE	libopencm3/include/libopencm3/efm32/tg/memorymap.h	48;"	d
 CODE_BASE	libopencm3/include/libopencm3/efm32/tg/memorymap.h	34;"	d
-COMMAND_EN	lib/disp.h	4;"	d
+COMMAND_CONTROL_BYTE	lib/disp.h	4;"	d
 COMP0_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	17;"	d
 COMP0_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	34;"	d
 COMP1	libopencm3/include/libopencm3/stm32/f0/comparator.h	41;"	d
@@ -5785,7 +5784,6 @@ DAC_SWTRIGR	libopencm3/include/libopencm3/stm32/f0/dac.h	49;"	d
 DAC_SWTRIGR_SWTRIG1	libopencm3/include/libopencm3/stm32/common/dac_common_all.h	321;"	d
 DAC_SWTRIGR_SWTRIG1	libopencm3/include/libopencm3/stm32/f0/dac.h	83;"	d
 DAC_SWTRIGR_SWTRIG2	libopencm3/include/libopencm3/stm32/common/dac_common_all.h	318;"	d
-DATA_EN	lib/disp.h	5;"	d
 DATA_IN	libopencm3/lib/usb/usb_private.h	/^			DATA_IN, LAST_DATA_IN, STATUS_IN,$/;"	e	enum:_usbd_device::usb_control_state::__anon30
 DATA_OUT	libopencm3/lib/usb/usb_private.h	/^			DATA_OUT, LAST_DATA_OUT, STATUS_OUT,$/;"	e	enum:_usbd_device::usb_control_state::__anon30
 DBGMCU_BASE	libopencm3/include/libopencm3/stm32/f0/memorymap.h	86;"	d
@@ -6028,10 +6026,6 @@ DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l0/memorymap.h	86;"	d
 DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l1/memorymap.h	111;"	d
 DESIG_UNIQUE_ID_BASE	libopencm3/include/libopencm3/stm32/l4/memorymap.h	118;"	d
 DES_BASE	libopencm3/include/libopencm3/msp432/e4/memorymap.h	76;"	d
-=======
-COMMAND_CONTROL_BYTE	lib/disp.h	4;"	d
-CSTD	rules.mk	/^CSTD ?= -std=c99$/;"	m
->>>>>>> cf0b8b384bead60eae36921dc70683d51c1fda23
 DEVICE	aystm/Makefile	/^DEVICE=stm32f407vgt6$/;"	m
 DEVICES_DATA	libopencm3/mk/genlink-config.mk	/^DEVICES_DATA = $(OPENCM3_DIR)\/ld\/devices.data$/;"	m
 DFSDM0_IRQHandler	libopencm3/include/libopencmsis/stm32/l4/irqhandlers.h	70;"	d
@@ -15061,7 +15055,7 @@ INFO_BASE	libopencm3/include/libopencm3/stm32/g0/memorymap.h	25;"	d
 INFO_BASE	libopencm3/include/libopencm3/stm32/l0/memorymap.h	28;"	d
 INFO_BASE	libopencm3/include/libopencm3/stm32/l1/memorymap.h	30;"	d
 INFO_BASE	libopencm3/include/libopencm3/stm32/l4/memorymap.h	31;"	d
-INIT_COMMANDS	lib/disp.h	7;"	d
+INIT_COMMANDS	lib/disp.h	9;"	d
 INTEL_COMPLIANCE_READ	libopencm3/tests/gadget-zero/usb-gadget0.c	52;"	d	file:
 INTEL_COMPLIANCE_WRITE	libopencm3/tests/gadget-zero/usb-gadget0.c	51;"	d	file:
 IOCONFIG_BASE	libopencm3/include/libopencm3/lpc13xx/memorymap.h	47;"	d
@@ -16568,8 +16562,8 @@ MATRIX_BASE	libopencm3/include/libopencm3/sam/3n/memorymap.h	44;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3s/memorymap.h	50;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3u/memorymap.h	47;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3x/memorymap.h	59;"	d
-MATRIX_COL	lib/disp.h	11;"	d
-MATRIX_ROW	lib/disp.h	10;"	d
+MATRIX_COL	lib/disp.h	13;"	d
+MATRIX_ROW	lib/disp.h	12;"	d
 MAX_FIFO_RAM	libopencm3/lib/usb/usb_lm4f.c	111;"	d	file:
 MAX_USER_CONTROL_CALLBACK	libopencm3/lib/usb/usb_private.h	41;"	d
 MAX_USER_SET_CONFIG_CALLBACK	libopencm3/lib/usb/usb_private.h	42;"	d
@@ -21177,7 +21171,6 @@ PWR_SR2_VOSF	libopencm3/include/libopencm3/stm32/l4/pwr.h	150;"	d
 Q	libopencm3/Makefile	/^Q := @$/;"	m
 Q	libopencm3/tests/rules.mk	/^Q	:= @$/;"	m
 Q	rules.mk	/^Q	:= @$/;"	m
-<<<<<<< HEAD
 QEI0_BASE	libopencm3/include/libopencm3/msp432/e4/memorymap.h	150;"	d
 QEI0_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	97;"	d
 QEI0_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	22;"	d
@@ -21273,6 +21266,7 @@ QUADSPI_SR_SMF	libopencm3/include/libopencm3/stm32/f4/quadspi.h	73;"	d
 QUADSPI_SR_TCF	libopencm3/include/libopencm3/stm32/f4/quadspi.h	75;"	d
 QUADSPI_SR_TEF	libopencm3/include/libopencm3/stm32/f4/quadspi.h	76;"	d
 QUADSPI_SR_TOF	libopencm3/include/libopencm3/stm32/f4/quadspi.h	72;"	d
+RAM_CONTROL_BYTE	lib/disp.h	5;"	d
 RASR	libopencm3/include/libopencmsis/core_cm3.h	/^	uint32_t RASR;$/;"	m	struct:__anon25
 RBAR	libopencm3/include/libopencmsis/core_cm3.h	/^	uint32_t RBAR;$/;"	m	struct:__anon25
 RCC2_BYPASS	libopencm3/include/libopencm3/lm3s/rcc.h	81;"	d
@@ -28741,9 +28735,6 @@ SDRAM_NORMAL	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^enum 
 SDRAM_PALL	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^enum fmc_sdram_command { SDRAM_CLK_CONF, SDRAM_NORMAL, SDRAM_PALL,$/;"	e	enum:fmc_sdram_command
 SDRAM_POWER_DOWN	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^			 SDRAM_SELF_REFRESH, SDRAM_POWER_DOWN };$/;"	e	enum:fmc_sdram_command
 SDRAM_SELF_REFRESH	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^			 SDRAM_SELF_REFRESH, SDRAM_POWER_DOWN };$/;"	e	enum:fmc_sdram_command
-=======
-RAM_CONTROL_BYTE	lib/disp.h	5;"	d
->>>>>>> cf0b8b384bead60eae36921dc70683d51c1fda23
 SD_ADDR	lib/disp.h	3;"	d
 SEG_LCD_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	45;"	d
 SEMA4_BASE	libopencm3/include/libopencm3/vf6xx/memorymap.h	37;"	d
@@ -36748,7 +36739,6 @@ binCollection	libopencm3/include/libopencm3/usb/audio.h	/^	uint8_t binCollection
 binfile	libopencm3/scripts/lpcvtcksum	/^binfile = open(sys.argv[1], 'r+b')$/;"	v
 block_count	libopencm3/lib/usb/usb_msc.c	/^	uint32_t block_count;$/;"	m	struct:_usbd_mass_storage	file:
 block_count	libopencm3/lib/usb/usb_msc.c	/^	uint32_t block_count;$/;"	m	struct:usb_msc_trans	file:
-blockingSengSeq	lib/disp.c	/^void blockingSengSeq(uint8_t *seq)$/;"	f
 blocking_handler	libopencm3/lib/cm3/vector.c	/^void blocking_handler(void)$/;"	f
 bmAttributes	libopencm3/include/libopencm3/usb/audio.h	/^	uint8_t bmAttributes;$/;"	m	struct:usb_audio_stream_audio_endpoint_descriptor
 bmAttributes	libopencm3/include/libopencm3/usb/audio.h	/^	uint8_t bmAttributes;$/;"	m	struct:usb_audio_stream_endpoint_descriptor

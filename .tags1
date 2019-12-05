@@ -4,7 +4,6 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-sdInit	/home/nefraer/src/AYstm32/lib/disp.c	/^void sdInit()$/;"	function	line:2
-blockingSengSeq	/home/nefraer/src/AYstm32/lib/disp.c	/^void blockingSengSeq(uint8_t *seq)$/;"	function	line:15	signature:(uint8_t *seq)
-fromDotMatrixToData	/home/nefraer/src/AYstm32/lib/disp.c	/^void fromDotMatrixToData()$/;"	function	line:21
-flashlight	/home/nefraer/src/AYstm32/lib/disp.c	/^void flashlight()$/;"	function	line:26
+sdInit	/home/nefraer/src/AYstm32/lib/disp.c	/^void sdInit()$/;"	function	line:5
+fromDotMatrixToData	/home/nefraer/src/AYstm32/lib/disp.c	/^void fromDotMatrixToData()$/;"	function	line:31
+flashlight	/home/nefraer/src/AYstm32/lib/disp.c	/^void flashlight()$/;"	function	line:36

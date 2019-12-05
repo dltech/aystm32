@@ -4,6 +4,8 @@
 #define COMMAND_CONTROL_BYTE    0x80
 #define RAM_CONTROL_BYTE        0xc0
 
+/* A8 3f, D3 00, 40, A0/A1, C0/C8, DA, 81 7f, A4 (включение), A6, D5, 8D 14, AF */
+
 #define INIT_COMMANDS 10
 uint8_t initSeq[INIT_COMMANDS] = {};
 
