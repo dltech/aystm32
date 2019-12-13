@@ -1,7 +1,7 @@
 #include "inttypes.h"
 
 /* только базовые настройки экрана, что бы увидеть все ищи другую библиотеку */
-#define SD_ADDR                 0xff
+#define SD_ADDR                 0x3c
 #define COMMAND_CONTROL_BYTE    0x80
 #define RAM_CONTROL_BYTE        0xc0
 
@@ -40,37 +40,55 @@
 #define DEFAULT_DESELECT            0x00
 #define DISPLAY_NOP                 0xe3
 
-        SET_MUX_RATIO,
-        MIN_MUX_RATIO,
-        SET_DISPLAY_OFFSET,
-        NULL,
-        SET_NULL_START_LINE,
-        NO_COL_REMAP,
-        SET_NORMAL_SCAN_DIR,
-        SET_COM_PIN_CONFIG,
-        SET_COM_PIN_CONFIG,
-        DEFAULT_COM_PIN,
-        SET_CONTRAST,
-        INIT_CONTRAST,
-        SET_DESELECT_LEVEL,
-        DEFAULT_DESELECT,
-        SET_MEMORY_ADDRESSING_MODE,
-
-        DISPLAY_ON,
-        SET_NON_INVERSE,
-        SET_CHARGE_PUMP,
-        ENABLE_CHARGE_PUMP,
-        SET_NORMAL_MODE,
-
-
-/* A8 3f, D3 00, 40, A0/A1, C0/C8, DA, 81 7f, A4 (включение), A6, D5, 8D 14, AF */
-
-#define INIT_COMMANDS 10
-uint8_t initSeq[INIT_COMMANDS] = {};
+const uint8_t initSize = 40;
+const uint8_t initSeq[initSize] = { (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_MUX_RATIO,
+                                    (uint8_t)MIN_MUX_RATIO,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_DISPLAY_CLOCK,
+                                    (uint8_t)DISPLAY_MAX_FREQ,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_DISPLAY_OFFSET,
+                                    (uint8_t)NULL,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_NULL_START_LINE,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_NULL_PAGE,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)NO_COL_REMAP,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_NORMAL_SCAN_DIR,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_COM_PIN_CONFIG,
+                                    (uint8_t)DEFAULT_COM_PIN,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_CONTRAST,
+                                    (uint8_t)INIT_CONTRAST,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_DESELECT_LEVEL,
+                                    (uint8_t)DEFAULT_DESELECT,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_MEMORY_ADDRESSING_MODE,
+                                    (uint8_t)HORISONTAL_ADDRESSING,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_DISPLAY_PRE_CHARGE,
+                                    (uint8_t)DEFAULT_PRE_CHARGE,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)DISPLAY_ON,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_NON_INVERSE,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_CHARGE_PUMP,
+                                    (uint8_t)ENABLE_CHARGE_PUMP,
+                                    (uint8_t)COMMAND_CONTROL_BYTE,
+                                    (uint8_t)SET_NORMAL_MODE };
 
 #define MATRIX_ROW  64
 #define MATRIX_COL  4
 volatile uint32_t dispBuffer[MATRIX_COL][MATRIX_ROW];
 
-#define BUFFER_SIZE 1016
+#define DISP_RAM_SIZE 1016
 uint8_t dispData[BUFFER_SIZE];
+
+void sdInit(void);
+void flashlight(void);
