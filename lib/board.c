@@ -1,6 +1,15 @@
 #include "../libopencm3/include/libopencm3/stm32/rcc.h"
+#include "st_usbfs.h"
 
 void sysClk(void);
+void usbOn(void);
+
+void rough_delay_us(uint16_t us)
+{
+    const uint32_t sysclkMhz = 72;
+    volatile uint32_t cnt = ((uint32_t)us)*sysclkMhz;
+    while(cnt-- > 0);
+}
 
 void sysClk()
 {
@@ -46,9 +55,20 @@ void boardInit()
     RCC_AHBENR  |= BOARD_AHB;
     RCC_APB1ENR |= BOARD_APB1;
     RCC_APB2ENR |= BOARD_APB2;
+    usbOn();
 }
 
 void photoButtonsInit(void)
 {
 
+}
+
+void usbOn()
+{
+    // лапки к usb подключаются сами (трогать их не надо), тактирование,
+    // я надеюсь, включено выше и больше там никаких приколов не будет
+    USB_CNTR_REG &= ~(uint32_t)USB_CNTR_PWDN;
+    rough_delay_us(1);
+    USB_ISTR_REG = 0;
+    USB_CNTR_REG &= ~(uint32_t)USB_CNTR_FRES;
 }

@@ -1,0 +1,107 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+LIBOPENCM3_ST_USBFS_COMMON_H	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define LIBOPENCM3_ST_USBFS_COMMON_H$/;"	macro	line:45
+USB_CNTR_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_REG	/;"	macro	line:60
+USB_ISTR_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_REG	/;"	macro	line:62
+USB_FNR_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_REG	/;"	macro	line:64
+USB_DADDR_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_DADDR_REG	/;"	macro	line:66
+USB_BTABLE_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_BTABLE_REG	/;"	macro	line:68
+USB_EP_REG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_REG(/;"	macro	line:71
+USB_CNTR_CTRM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_CTRM	/;"	macro	line:81
+USB_CNTR_PMAOVRM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_PMAOVRM	/;"	macro	line:82
+USB_CNTR_ERRM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_ERRM	/;"	macro	line:83
+USB_CNTR_WKUPM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_WKUPM	/;"	macro	line:84
+USB_CNTR_SUSPM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_SUSPM	/;"	macro	line:85
+USB_CNTR_RESETM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_RESETM	/;"	macro	line:86
+USB_CNTR_SOFM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_SOFM	/;"	macro	line:87
+USB_CNTR_ESOFM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_ESOFM	/;"	macro	line:88
+USB_CNTR_RESUME	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_RESUME	/;"	macro	line:91
+USB_CNTR_FSUSP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_FSUSP	/;"	macro	line:92
+USB_CNTR_LP_MODE	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_LP_MODE	/;"	macro	line:93
+USB_CNTR_PWDN	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_PWDN	/;"	macro	line:94
+USB_CNTR_FRES	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CNTR_FRES	/;"	macro	line:95
+USB_ISTR_CTR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_CTR	/;"	macro	line:99
+USB_ISTR_PMAOVR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_PMAOVR	/;"	macro	line:100
+USB_ISTR_ERR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_ERR	/;"	macro	line:101
+USB_ISTR_WKUP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_WKUP	/;"	macro	line:102
+USB_ISTR_SUSP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_SUSP	/;"	macro	line:103
+USB_ISTR_RESET	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_RESET	/;"	macro	line:104
+USB_ISTR_SOF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_SOF	/;"	macro	line:105
+USB_ISTR_ESOF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_ESOF	/;"	macro	line:106
+USB_ISTR_DIR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_DIR	/;"	macro	line:107
+USB_ISTR_EP_ID	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_ISTR_EP_ID	/;"	macro	line:108
+USB_CLR_ISTR_PMAOVR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_PMAOVR(/;"	macro	line:113
+USB_CLR_ISTR_ERR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_ERR(/;"	macro	line:114
+USB_CLR_ISTR_WKUP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_WKUP(/;"	macro	line:115
+USB_CLR_ISTR_SUSP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_SUSP(/;"	macro	line:116
+USB_CLR_ISTR_RESET	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_RESET(/;"	macro	line:117
+USB_CLR_ISTR_SOF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_SOF(/;"	macro	line:118
+USB_CLR_ISTR_ESOF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_ISTR_ESOF(/;"	macro	line:119
+USB_FNR_RXDP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_RXDP	/;"	macro	line:123
+USB_FNR_RXDM	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_RXDM	/;"	macro	line:124
+USB_FNR_LCK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_LCK	/;"	macro	line:125
+USB_FNR_LSOF_SHIFT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_LSOF_SHIFT	/;"	macro	line:127
+USB_FNR_LSOF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_LSOF	/;"	macro	line:128
+USB_FNR_FN	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_FNR_FN	/;"	macro	line:130
+USB_DADDR_EF	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_DADDR_EF	/;"	macro	line:134
+USB_DADDR_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_DADDR_ADDR	/;"	macro	line:135
+USB_BTABLE_BTABLE	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_BTABLE_BTABLE	/;"	macro	line:139
+USB_EP0	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP0	/;"	macro	line:145
+USB_EP1	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP1	/;"	macro	line:146
+USB_EP2	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP2	/;"	macro	line:147
+USB_EP3	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP3	/;"	macro	line:148
+USB_EP4	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP4	/;"	macro	line:149
+USB_EP5	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP5	/;"	macro	line:150
+USB_EP6	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP6	/;"	macro	line:151
+USB_EP7	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP7	/;"	macro	line:152
+USB_EP_RX_CTR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_CTR	/;"	macro	line:157
+USB_EP_RX_DTOG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_DTOG	/;"	macro	line:158
+USB_EP_RX_STAT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT	/;"	macro	line:159
+USB_EP_SETUP	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_SETUP	/;"	macro	line:161
+USB_EP_TYPE	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TYPE	/;"	macro	line:162
+USB_EP_KIND	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_KIND	/;"	macro	line:163
+USB_EP_TX_CTR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_CTR	/;"	macro	line:168
+USB_EP_TX_DTOG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_DTOG	/;"	macro	line:169
+USB_EP_TX_STAT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT	/;"	macro	line:170
+USB_EP_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_ADDR	/;"	macro	line:172
+USB_EP_NTOGGLE_MSK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_NTOGGLE_MSK	/;"	macro	line:175
+USB_EP_RX_STAT_TOG_MSK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT_TOG_MSK	/;"	macro	line:183
+USB_EP_TX_STAT_TOG_MSK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT_TOG_MSK	/;"	macro	line:185
+USB_EP_RX_STAT_DISABLED	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT_DISABLED	/;"	macro	line:188
+USB_EP_RX_STAT_STALL	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT_STALL	/;"	macro	line:189
+USB_EP_RX_STAT_NAK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT_NAK	/;"	macro	line:190
+USB_EP_RX_STAT_VALID	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_RX_STAT_VALID	/;"	macro	line:191
+USB_EP_TX_STAT_DISABLED	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT_DISABLED	/;"	macro	line:194
+USB_EP_TX_STAT_STALL	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT_STALL	/;"	macro	line:195
+USB_EP_TX_STAT_NAK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT_NAK	/;"	macro	line:196
+USB_EP_TX_STAT_VALID	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TX_STAT_VALID	/;"	macro	line:197
+USB_EP_TYPE_BULK	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TYPE_BULK	/;"	macro	line:200
+USB_EP_TYPE_CONTROL	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TYPE_CONTROL	/;"	macro	line:201
+USB_EP_TYPE_ISO	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TYPE_ISO	/;"	macro	line:202
+USB_EP_TYPE_INTERRUPT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_EP_TYPE_INTERRUPT	/;"	macro	line:203
+USB_SET_EP_RX_STAT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_RX_STAT(/;"	macro	line:213
+USB_SET_EP_TX_STAT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_TX_STAT(/;"	macro	line:217
+USB_CLR_EP_NTOGGLE_BIT_AND_SET	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_NTOGGLE_BIT_AND_SET(/;"	macro	line:228
+USB_CLR_EP_RX_CTR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_RX_CTR(/;"	macro	line:232
+USB_CLR_EP_TX_CTR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_TX_CTR(/;"	macro	line:235
+USB_SET_EP_TYPE	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_TYPE(/;"	macro	line:239
+USB_SET_EP_KIND	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_KIND(/;"	macro	line:245
+USB_CLR_EP_KIND	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_KIND(/;"	macro	line:251
+USB_SET_EP_STAT_OUT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_STAT_OUT(/;"	macro	line:256
+USB_CLR_EP_STAT_OUT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_STAT_OUT(/;"	macro	line:257
+USB_SET_EP_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_ADDR(/;"	macro	line:259
+USB_CLR_EP_TX_DTOG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_TX_DTOG(/;"	macro	line:266
+USB_CLR_EP_RX_DTOG	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_CLR_EP_RX_DTOG(/;"	macro	line:271
+USB_GET_BTABLE	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_GET_BTABLE	/;"	macro	line:279
+USB_GET_EP_TX_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_GET_EP_TX_ADDR(/;"	macro	line:283
+USB_GET_EP_TX_COUNT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_GET_EP_TX_COUNT(/;"	macro	line:284
+USB_GET_EP_RX_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_GET_EP_RX_ADDR(/;"	macro	line:285
+USB_GET_EP_RX_COUNT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_GET_EP_RX_COUNT(/;"	macro	line:286
+USB_SET_EP_TX_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_TX_ADDR(/;"	macro	line:287
+USB_SET_EP_TX_COUNT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_TX_COUNT(/;"	macro	line:288
+USB_SET_EP_RX_ADDR	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_RX_ADDR(/;"	macro	line:289
+USB_SET_EP_RX_COUNT	/home/dltech/src/aystm32/libopencm3/include/libopencm3/stm32/common/st_usbfs_common.h	/^#define USB_SET_EP_RX_COUNT(/;"	macro	line:290

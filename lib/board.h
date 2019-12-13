@@ -35,3 +35,5 @@
 #define BOARD_AHB   RCC_AHBENR_DMA1EN
 #define BOARD_APB1  RCC_APB1ENR_USBEN
 #define BOARD_APB2  RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN
+
+void rough_delay_us(uint16_t us);

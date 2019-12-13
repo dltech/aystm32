@@ -34956,6 +34956,7 @@ rng_disable	libopencm3/lib/stm32/common/rng_common_v1.c	/^void rng_disable(void)
 rng_enable	libopencm3/lib/stm32/common/rng_common_v1.c	/^void rng_enable(void)$/;"	f
 rng_get_random	libopencm3/lib/stm32/common/rng_common_v1.c	/^bool rng_get_random(uint32_t *rand_nr)$/;"	f
 rng_get_random_blocking	libopencm3/lib/stm32/common/rng_common_v1.c	/^uint32_t rng_get_random_blocking(void)$/;"	f
+rough_delay_us	lib/board.c	/^void rough_delay_us(uint16_t us)$/;"	f
 rtc_auto_awake	libopencm3/lib/stm32/f1/rtc.c	/^void rtc_auto_awake(enum rcc_osc clock_source, uint32_t prescale_val)$/;"	f
 rtc_awake_from_off	libopencm3/lib/stm32/f1/rtc.c	/^void rtc_awake_from_off(enum rcc_osc clock_source)$/;"	f
 rtc_awake_from_standby	libopencm3/lib/stm32/f1/rtc.c	/^void rtc_awake_from_standby(void)$/;"	f
@@ -35489,6 +35490,7 @@ usart_wait_send_ready	libopencm3/lib/stm32/common/usart_common_f124.c	/^void usa
 usart_wait_send_ready	libopencm3/lib/stm32/common/usart_common_v2.c	/^void usart_wait_send_ready(uint32_t usart)$/;"	f
 usart_wp_disable	libopencm3/lib/sam/common/usart_common_all.c	/^void usart_wp_disable(uint32_t usart)$/;"	f
 usart_wp_enable	libopencm3/lib/sam/common/usart_common_all.c	/^void usart_wp_enable(uint32_t usart)$/;"	f
+usbOn	lib/board.c	/^void usbOn()$/;"	f
 usb_audio_feature_unit_descriptor_2ch	libopencm3/include/libopencm3/usb/audio.h	/^struct usb_audio_feature_unit_descriptor_2ch {$/;"	s
 usb_audio_feature_unit_descriptor_body	libopencm3/include/libopencm3/usb/audio.h	/^struct usb_audio_feature_unit_descriptor_body {$/;"	s
 usb_audio_feature_unit_descriptor_head	libopencm3/include/libopencm3/usb/audio.h	/^struct usb_audio_feature_unit_descriptor_head {$/;"	s
