@@ -4,7 +4,7 @@
 #include "gpio.h"
 #include "disp.h"
 
-void i2c_write_w_nulls(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t nullN);
+void i2c_write_w_ones(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t fillSize);
 
 void sdInit()
 {
@@ -26,9 +26,27 @@ void sdInit()
 //             dma send seq
 }
 
-void fromDotMatrixToData()
+void fullSizeXbmToDispHorAddr(uint8_t *in, uint8_t *out)
 {
-    for(int i=0 ; i<BUFFER_SIZE)
+    const uint8_t xCol = 16;
+    uint8_t outN = 0;
+    uint8_t inN = 0;
+    for(int page=0 ; page<DISP_PAGE ; ++page)
+    {
+        for(int col=0 ; col<DISP_COL ; ++col) {
+            outN = page*DISP_COL+col;
+            inN  = xCol*page*8;
+            for(int i=0; i<8; ++i) out[outN] |= in[inN] 
+        }
+    }
+    for(int i=0 ; i<DISP_RAM_SIZE ; ++i) {
+        for(int j=0 ; j<8 ; ++j) dispBuffer[i] |= array[xCol*j + i] & (1 << );
+    }
+}
+
+void dispTransfer()
+{
+
 }
 
 void flashlight()
@@ -38,10 +56,10 @@ void flashlight()
                                          (uint8_t)SET_CONTRAST,
                                          (uint8_t)MAX_CONTRAST,
                                          (uint8_t)RAM_CONTROL_BYTE};
-    i2c_write_w_nulls(DISPI2C, SD_ADDR, flashOnSeq, seqSize, DISP_RAM_SIZE);
+    i2c_write_w_ones(DISPI2C, SD_ADDR, flashOnSeq, seqSize, DISP_RAM_SIZE);
 }
 
-void i2c_write_w_nulls(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t nullN)
+void i2c_write_w_ones(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t fillSize)
 {
     while ((I2C_SR2(i2c) & I2C_SR2_BUSY)) {
     }
@@ -62,8 +80,8 @@ void i2c_write_w_nulls(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_
            i2c_send_data(i2c, data[i]);
            while (!(I2C_SR1(i2c) & (I2C_SR1_BTF)));
     }
-    for (uint16_t i = 0; i<nullN; i++) {);
-        i2c_send_data(i2c, NULL);
+    for (uint16_t i = 0; i<fillSize; i++) {
+        i2c_send_data(i2c, 0xff);
         while (!(I2C_SR1(i2c) & (I2C_SR1_BTF)));
     }
     i2c_send_stop(i2c);

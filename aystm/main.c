@@ -6,7 +6,6 @@
 int main(void)
 {
     clkInit();
-
     delay();
     displayInit();
     fanInit();

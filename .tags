@@ -6074,8 +6074,10 @@ DISPLAY_MAX_FREQ	lib/disp.h	34;"	d
 DISPLAY_NOP	lib/disp.h	41;"	d
 DISPLAY_ON	lib/disp.h	20;"	d
 DISPLAY_PORT	lib/board.h	14;"	d
+DISP_COL	lib/disp.h	86;"	d
+DISP_PAGE	lib/disp.h	87;"	d
 DISP_PINS	lib/board.h	15;"	d
-DISP_RAM_SIZE	lib/disp.h	90;"	d
+DISP_RAM_SIZE	lib/disp.h	88;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/ezr32wg/memorymap.h	38;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/hg/memorymap.h	37;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/lg/memorymap.h	38;"	d
@@ -16571,8 +16573,6 @@ MATRIX_BASE	libopencm3/include/libopencm3/sam/3n/memorymap.h	44;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3s/memorymap.h	50;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3u/memorymap.h	47;"	d
 MATRIX_BASE	libopencm3/include/libopencm3/sam/3x/memorymap.h	59;"	d
-MATRIX_COL	lib/disp.h	87;"	d
-MATRIX_ROW	lib/disp.h	86;"	d
 MAX_CONTRAST	lib/disp.h	15;"	d
 MAX_FIFO_RAM	libopencm3/lib/usb/usb_lm4f.c	111;"	d	file:
 MAX_USER_CONTROL_CALLBACK	libopencm3/lib/usb/usb_private.h	41;"	d
@@ -36998,8 +36998,8 @@ dfu_req	libopencm3/include/libopencm3/usb/dfu.h	/^enum dfu_req {$/;"	g
 dfu_state	libopencm3/include/libopencm3/usb/dfu.h	/^enum dfu_state {$/;"	g
 dfu_status	libopencm3/include/libopencm3/usb/dfu.h	/^enum dfu_status {$/;"	g
 disconnect	libopencm3/lib/usb/usb_private.h	/^	void (*disconnect)(usbd_device *usbd_dev, bool disconnected);$/;"	m	struct:_usbd_driver
-dispBuffer	lib/disp.h	/^volatile uint32_t dispBuffer[MATRIX_COL][MATRIX_ROW];$/;"	v
 dispData	lib/disp.h	/^uint8_t dispData[BUFFER_SIZE];$/;"	v
+dispTransfer	lib/disp.c	/^void dispTransfer()$/;"	f
 dma_calc_end_from_start	libopencm3/lib/efm32/common/dma_common.c	/^static inline uint32_t dma_calc_end_from_start(uint32_t start, uint8_t inc,$/;"	f	file:
 dma_ch	libopencm3/include/libopencm3/efm32/common/dma_common.h	/^enum dma_ch {$/;"	g
 dma_chan_desc	libopencm3/include/libopencm3/efm32/common/dma_common.h	/^struct dma_chan_desc {$/;"	s
@@ -37357,7 +37357,7 @@ fmc_sdram_command	libopencm3/include/libopencm3/stm32/common/fmc_common_f47.h	/^
 force_nak	libopencm3/lib/usb/usb_private.h	/^	uint8_t force_nak[4];$/;"	m	struct:_usbd_device
 format_email	libopencm3/scripts/checkpatch.pl	/^sub format_email {$/;"	s
 freqs	libopencm3/include/libopencm3/usb/audio.h	/^	struct usb_audio_format_discrete_sampling_frequency freqs[1];$/;"	m	struct:usb_audio_format_type1_descriptor_1freq	typeref:struct:usb_audio_format_type1_descriptor_1freq::usb_audio_format_discrete_sampling_frequency
-fromDotMatrixToData	lib/disp.c	/^void fromDotMatrixToData()$/;"	f
+fullSizeXbmToDispHorAddr	lib/disp.c	/^void fullSizeXbmToDispHorAddr(uint8_t *in, uint8_t *out)$/;"	f
 funcp_t	libopencm3/lib/cm3/vector.c	/^typedef void (*funcp_t) (void);$/;"	t	file:
 gadget0_control_request	libopencm3/tests/gadget-zero/usb-gadget0.c	/^static enum usbd_request_return_codes gadget0_control_request(usbd_device *usbd_dev,$/;"	f	file:
 gadget0_in_cb_loopback	libopencm3/tests/gadget-zero/usb-gadget0.c	/^static void gadget0_in_cb_loopback(usbd_device *usbd_dev, uint8_t ep)$/;"	f	file:
@@ -37605,7 +37605,7 @@ i2c_transfer7	libopencm3/lib/stm32/common/i2c_common_v2.c	/^void i2c_transfer7(u
 i2c_transfer_complete	libopencm3/lib/stm32/common/i2c_common_v2.c	/^bool i2c_transfer_complete(uint32_t i2c)$/;"	f
 i2c_transmit_int_status	libopencm3/lib/stm32/common/i2c_common_v2.c	/^bool i2c_transmit_int_status(uint32_t i2c)$/;"	f
 i2c_write7_v1	libopencm3/lib/stm32/common/i2c_common_v1.c	/^static void i2c_write7_v1(uint32_t i2c, int addr, uint8_t *data, size_t n)$/;"	f	file:
-i2c_write_w_nulls	lib/disp.c	/^void i2c_write_w_nulls(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t nullN)$/;"	f
+i2c_write_w_ones	lib/disp.c	/^void i2c_write_w_ones(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t fillSize)$/;"	f
 iChannelNames	libopencm3/include/libopencm3/usb/audio.h	/^	uint8_t iChannelNames;$/;"	m	struct:usb_audio_input_terminal_descriptor
 iConfiguration	libopencm3/include/libopencm3/usb/usbstd.h	/^	uint8_t iConfiguration;$/;"	m	struct:usb_config_descriptor
 iElement	libopencm3/include/libopencm3/usb/midi.h	/^	uint8_t iElement;$/;"	m	struct:usb_midi_element_descriptor_tail

@@ -83,11 +83,9 @@ const uint8_t initSeq[initSize] = { (uint8_t)COMMAND_CONTROL_BYTE,
                                     (uint8_t)COMMAND_CONTROL_BYTE,
                                     (uint8_t)SET_NORMAL_MODE };
 
-#define MATRIX_ROW  64
-#define MATRIX_COL  4
-volatile uint32_t dispBuffer[MATRIX_COL][MATRIX_ROW];
-
-#define DISP_RAM_SIZE 1016
+#define DISP_COL  128
+#define DISP_PAGE 8
+#define DISP_RAM_SIZE 1024
 uint8_t dispData[BUFFER_SIZE];
 
 void sdInit(void);
