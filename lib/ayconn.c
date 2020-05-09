@@ -1,6 +1,15 @@
-#include "board.h"
+#include "inttypes.h"
 
-volatile ayStruct {
+#include "../libopencm3/include/libopencm3/stm32/gpio.h"
+#include "../libopencm3/include/libopencm3/stm32/rcc.h"
+#include "../libopencm3/include/libopencm3/stm32/timer.h"
+#include "../libopencm3/include/libopencm3/stm32/dma.h"
+
+#include "board.h"
+#include "ayconn.h"
+
+
+volatile struct ayStruct {
     uint32_t addr;
     uint32_t data;
 } ayData = {0,0};
@@ -8,12 +17,9 @@ volatile ayStruct {
 void initAy()
 {
     // сперва порты
-    gpio_mode_setup(AYDATAPORT, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AY_DATA_IOS);
-    gpio_set_output_options(AYDATAPORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_DATA_IOS);
-    gpio_mode_setup(AY_SERV_PORT, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, AY_BC1 | AY_BDIR | AY_RESET);
-    gpio_set_output_options(AY_SERV_PORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_BC1 | AY_BDIR | AY_RESET);
-    gpio_mode_setup(AY_SERV_PORT, GPIO_MODE_AF, GPIO_PUPD_NONE, AY_CLOCK);
-    gpio_set_output_options(AY_SERV_PORT, GPIO_OTYPE_PP, GPIO_OSPEED_100MHZ, AY_CLOCK);
+    gpio_set_mode(AY_DATA_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AY_DATA_IOS);
+    gpio_set_mode(AY_SERV_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AY_BC1 | AY_BDIR | AY_RESET);
+    gpio_set_mode(AY_DATA_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, AY_CLOCK);
 
     // таймер для лапки тактирования и запуск передачи данных по тактам
     TIM1_CR1   = (uint32_t) TIM_CR1_CKD_CK_INT;
@@ -42,6 +48,6 @@ void initAy()
    не ушли, то они пропали */
 void aySend(uint8_t addr, uint8_t data)
 {
-    ayData.addr = 0xffff0000 | (0x000000ff & (uitn32_t)addr);
+    ayData.addr = 0xffff0000 | (0x000000ff & (uint32_t)addr);
     ayData.data = 0xffff0000 | (0x000000ff & (uint32_t)data);
 }

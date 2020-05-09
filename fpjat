@@ -1,0 +1,4 @@
+make -C aystm clean
+make -C aystm
+st-flash erase
+xfce4-terminal -e "st-util -p 5555 -n" --tab -e "gdb-multiarch --init-command="init_gdb" aystm/aystm.elf"

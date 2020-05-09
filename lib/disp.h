@@ -1,3 +1,6 @@
+#ifndef H_DISP
+#define H_DISP
+
 #include "inttypes.h"
 
 /* только базовые настройки экрана, что бы увидеть все ищи другую библиотеку */
@@ -29,7 +32,7 @@
 #define SET_NORMAL_SCAN_DIR         0xc0
 #define SET_INVERSE_SCAN_DIR        0xc8
 #define SET_DISPLAY_OFFSET          0xd3
-#define NULL                        0x00
+#define DISP_NULL                   0x00
 #define SET_DISPLAY_CLOCK           0xd5
 #define DISPLAY_MAX_FREQ            0xf0
 #define SET_DISPLAY_PRE_CHARGE      0xd9
@@ -40,53 +43,12 @@
 #define DEFAULT_DESELECT            0x00
 #define DISPLAY_NOP                 0xe3
 
-const uint8_t initSize = 40;
-const uint8_t initSeq[initSize] = { (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_MUX_RATIO,
-                                    (uint8_t)MIN_MUX_RATIO,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_DISPLAY_CLOCK,
-                                    (uint8_t)DISPLAY_MAX_FREQ,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_DISPLAY_OFFSET,
-                                    (uint8_t)NULL,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_NULL_START_LINE,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_NULL_PAGE,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)NO_COL_REMAP,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_NORMAL_SCAN_DIR,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_COM_PIN_CONFIG,
-                                    (uint8_t)DEFAULT_COM_PIN,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_CONTRAST,
-                                    (uint8_t)INIT_CONTRAST,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_DESELECT_LEVEL,
-                                    (uint8_t)DEFAULT_DESELECT,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_MEMORY_ADDRESSING_MODE,
-                                    (uint8_t)HORISONTAL_ADDRESSING,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_DISPLAY_PRE_CHARGE,
-                                    (uint8_t)DEFAULT_PRE_CHARGE,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)DISPLAY_ON,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_NON_INVERSE,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_CHARGE_PUMP,
-                                    (uint8_t)ENABLE_CHARGE_PUMP,
-                                    (uint8_t)COMMAND_CONTROL_BYTE,
-                                    (uint8_t)SET_NORMAL_MODE };
-
 #define DISP_COL  128
 #define DISP_PAGE 8
 #define DISP_RAM_SIZE 1024
-uint8_t dispData[BUFFER_SIZE];
+uint8_t dispData[DISP_RAM_SIZE];
 
 void sdInit(void);
 void flashlight(void);
+
+#endif

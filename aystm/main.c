@@ -5,14 +5,6 @@
 
 int main(void)
 {
-    clkInit();
-    delay();
-    displayInit();
-    fanInit();
-    menuInit();
-    tl_init();
-    while(1)
-    {
-        ;
-    }
+    boardInit();
+    while(1);
 }

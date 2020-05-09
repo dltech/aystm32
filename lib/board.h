@@ -1,5 +1,8 @@
-#include "gpio.h"
-#include "i2c.h"
+#ifndef H_BOARD
+#define H_BOARD
+
+#include "../libopencm3/include/libopencm3/stm32/gpio.h"
+#include "../libopencm3/include/libopencm3/stm32/i2c.h"
 
 #define SYSCLKHZ    72000000
 
@@ -13,6 +16,7 @@
 
 #define DISPLAY_PORT GPIOB
 #define DISP_PINS    GPIO6 | GPIO7
+#define DISP_RESET   GPIO5
 
 #define BUTTON_PORT  GPIOB
 #define BUTTON_L     GPIO4
@@ -36,4 +40,7 @@
 #define BOARD_APB1  RCC_APB1ENR_USBEN
 #define BOARD_APB2  RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN
 
+void boardInit(void);
 void rough_delay_us(uint16_t us);
+
+#endif
