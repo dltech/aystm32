@@ -5,7 +5,6 @@
 
 void initAy(void);
 void aySend(uint8_t addr, uint8_t data);
-
-
+void aySendBl(uint8_t addr, uint8_t data);
 
 #endif

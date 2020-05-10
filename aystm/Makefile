@@ -6,6 +6,7 @@ CFILES = main.c
 CFILES += ayconn.c
 CFILES += board.c
 CFILES += disp.c
+CFILES += lm4811.c
 
 # TODO - you will need to edit these two lines!
 DEVICE=stm32f103c8

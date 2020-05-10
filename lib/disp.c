@@ -34,12 +34,12 @@ void sdInit()
 
     #define initSize    41
     uint8_t initSeq[initSize] = { (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_MUX_RATIO,
-                                        (uint8_t)MIN_MUX_RATIO,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_DISPLAY_CLOCK,
-                                        (uint8_t)DISPLAY_MAX_FREQ,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_MUX_RATIO,
+                                  (uint8_t)MIN_MUX_RATIO,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_DISPLAY_CLOCK,
+                                  (uint8_t)DISPLAY_MAX_FREQ,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
                                         (uint8_t)SET_DISPLAY_OFFSET,
                                         (uint8_t)DISP_NULL,
                                         (uint8_t)COMMAND_CONTROL_BYTE,
