@@ -1750,4 +1750,6 @@ Wire Bus Line
 	3600 3000 3600 6650
 Entry Wire Line
 	3600 3900 3700 3800
+Text Label 3700 2900 0    50   ~ 0
+GND
 $EndSCHEMATC

@@ -5,48 +5,53 @@
 #include "lm4811.h"
 #include "ayconn.h"
 
-
-#define MUSIC_SIZE 32
-uint8_t music[MUSIC_SIZE] = { 0,
-                      1,
-                      2,
-                      3,
-                      4,
-                      5,
-                      6,
-                      7,
-                      8,
-                      9,
-                      10,
-                      11,
-                      12,
-                      13,
-                      14,
-                      15,
-                      15,
-                      14,
-                      13,
-                      12,
-                      11,
-                      10,
-                      9,
-                      8,
-                      7,
-                      6,
-                      5,
-                      4,
-                      3,
-                      2,
-                      1 };
+#include "../libopencm3/include/libopencm3/stm32/pwr.h"
+#include "../libopencm3/include/libopencm3/stm32/gpio.h"
+#include "../libopencm3/include/libopencm3/stm32/rcc.h"
+#include "../libopencm3/include/libopencm3/stm32/f1/bkp.h"
+#include "../libopencm3/include/libopencm3/stm32/timer.h"
 
 int main(void)
 {
     boardInit();
-    init4811(8);
     initAy();
-    uint8_t i = 0;
-    while(1) {
-        aySendBl(10, 0x10 | music[i++]);
-        if(i>=MUSIC_SIZE) i=0;
-    }
+    init4811(16);
+
+// отладка чтоб пищало
+    aySendBlocking(5, 0x01);
+    rough_delay_us(1000);
+    aySendBlocking(4, 0xff);
+    rough_delay_us(1000);
+    aySendBlocking(3, 0x01);
+    rough_delay_us(1000);
+    aySendBlocking(2, 0xff);
+    rough_delay_us(1000);
+    aySendBlocking(1, 0x01);
+    rough_delay_us(1000);
+    aySendBlocking(0, 0xff);
+    rough_delay_us(1000);
+    aySendBlocking(10, 0x00);
+    rough_delay_us(1000);
+    aySendBlocking(11, 0x00);
+    rough_delay_us(1000);
+    aySendBlocking(12, 0x00);
+    rough_delay_us(1000);
+    aySendBlocking(7, 0xf8);
+    rough_delay_us(1000);
+    aySendBlocking(0xd, 0x0d);
+    rough_delay_us(1000);
+
+    aySendBlocking(0xb, 0x01);
+    rough_delay_us(1000);
+    aySendBlocking(0xc, 0x01);
+    rough_delay_us(1000);
+
+    aySendBlocking(0x8, 0x10);
+    rough_delay_us(1000);
+    aySendBlocking(0x9, 0x10);
+    rough_delay_us(1000);
+    aySendBlocking(0xa, 0x10);
+    rough_delay_us(1000);
+
+    while(1);
 }

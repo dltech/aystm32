@@ -1474,32 +1474,6 @@ Wire Wire Line
 	9500 4900 10000 4900
 Wire Wire Line
 	9500 4900 9500 4400
-$Comp
-L device:R R12
-U 1 1 5E148781
-P 9300 2050
-F 0 "R12" V 9350 1900 50  0000 C CNN
-F 1 "100k" V 9300 2050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9230 2050 50  0001 C CNN
-F 3 "" H 9300 2050 50  0001 C CNN
-	1    9300 2050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9500 2050 9450 2050
-$Comp
-L power:+5V #PWR01
-U 1 1 5E15D7CC
-P 9000 950
-F 0 "#PWR01" H 9000 800 50  0001 C CNN
-F 1 "+5V" H 9015 1123 50  0000 C CNN
-F 2 "" H 9000 950 50  0001 C CNN
-F 3 "" H 9000 950 50  0001 C CNN
-	1    9000 950 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 2050 9000 2050
 Wire Wire Line
 	8950 1750 8950 1800
 Wire Wire Line
@@ -1507,8 +1481,6 @@ Wire Wire Line
 Connection ~ 8950 1750
 Wire Wire Line
 	9000 1750 8950 1750
-Wire Wire Line
-	9000 950  9000 2050
 $Comp
 L device:LED D3
 U 1 1 5E246DDB
@@ -1738,6 +1710,25 @@ Wire Wire Line
 	9200 5300 10050 5300
 Wire Wire Line
 	4000 3800 3700 3800
+Entry Wire Line
+	3600 3900 3700 3800
+Text Label 3700 2900 0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR0137
+U 1 1 5EBEF025
+P 9050 2450
+F 0 "#PWR0137" H 9050 2200 50  0001 C CNN
+F 1 "GND" H 9055 2277 50  0000 C CNN
+F 2 "" H 9050 2450 50  0001 C CNN
+F 3 "" H 9050 2450 50  0001 C CNN
+	1    9050 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 2450 9050 2050
+Wire Wire Line
+	9050 2050 9500 2050
 Wire Bus Line
 	3700 5800 9200 5800
 Wire Bus Line
@@ -1748,8 +1739,4 @@ Wire Bus Line
 	6100 3400 6100 5700
 Wire Bus Line
 	3600 3000 3600 6650
-Entry Wire Line
-	3600 3900 3700 3800
-Text Label 3700 2900 0    50   ~ 0
-GND
 $EndSCHEMATC

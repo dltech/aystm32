@@ -10,9 +10,14 @@ void photoButtonsInit(void);
 
 void rough_delay_us(uint16_t us)
 {
-    const uint32_t sysclkMhz = 72;
-    volatile uint32_t cnt = ((uint32_t)us)*sysclkMhz;
+    volatile uint32_t cnt = (uint32_t)us*(uint32_t)4;
     while(cnt-- > 0);
+}
+
+void delay_s(uint16_t s)
+{
+    uint16_t cnt = s*20;
+    while(cnt-- > 0) rough_delay_us(50000);
 }
 
 void sysClk()
@@ -28,8 +33,8 @@ void sysClk()
                   | (RCC_CFGR_PLLMUL_PLL_CLK_MUL9 << RCC_CFGR_PLLMUL_SHIFT) \
                   | (RCC_CFGR_PLLXTPRE_HSE_CLK << 17)                       \
                   | (RCC_CFGR_PLLSRC_HSE_CLK << 16)                         \
-                  | (RCC_CFGR_PPRE2_HCLK_DIV2 << RCC_CFGR_PPRE2_SHIFT)     \
-                  | (RCC_CFGR_PPRE1_HCLK_DIV2 << RCC_CFGR_PPRE1_SHIFT)     \
+                  | (RCC_CFGR_PPRE2_HCLK_NODIV << RCC_CFGR_PPRE2_SHIFT)     \
+                  | (RCC_CFGR_PPRE1_HCLK_NODIV << RCC_CFGR_PPRE1_SHIFT)     \
                   | (RCC_CFGR_HPRE_SYSCLK_DIV2 << RCC_CFGR_HPRE_SHIFT);
     RCC_CFGR = cfgr;
 
@@ -72,9 +77,9 @@ void usbOn()
 void boardInit()
 {
     sysClk();
-    RCC_AHBENR  |= BOARD_AHB;
-    RCC_APB1ENR |= BOARD_APB1;
-    RCC_APB2ENR |= BOARD_APB2;
+    RCC_AHBENR  |= (uint32_t)BOARD_AHB;
+    RCC_APB1ENR |= (uint32_t)BOARD_APB1;
+    RCC_APB2ENR |= (uint32_t)BOARD_APB2;
     usbOn();
 }
 

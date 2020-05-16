@@ -3,6 +3,7 @@
 
 #include "../libopencm3/include/libopencm3/stm32/gpio.h"
 #include "../libopencm3/include/libopencm3/stm32/i2c.h"
+#include "../libopencm3/include/libopencm3/stm32/rcc.h"
 
 #define SYSCLKHZ    72000000
 #define TIMERSHZ    SYSCLKHZ/2
@@ -38,10 +39,14 @@
 
 // сразу задаю всё тактирование используемой периферии
 #define BOARD_AHB   RCC_AHBENR_DMA1EN
-#define BOARD_APB1  RCC_APB1ENR_USBEN
-#define BOARD_APB2  RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN | RCC_APB2ENR_TIM1EN
+#define BOARD_APB1  RCC_APB1ENR_USBEN | RCC_APB1ENR_BKPEN | RCC_APB1ENR_PWREN \
+                  | RCC_APB1ENR_TIM2EN
+#define BOARD_APB2  RCC_APB2ENR_IOPAEN | RCC_APB2ENR_IOPBEN | RCC_APB2ENR_IOPCEN \
+                  | RCC_APB2ENR_TIM1EN | RCC_APB2ENR_AFIOEN
 
 void boardInit(void);
 void rough_delay_us(uint16_t us);
+void delay_s(uint16_t s);
+
 
 #endif

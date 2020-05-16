@@ -2363,19 +2363,19 @@ ATIMER_PRESET	libopencm3/include/libopencm3/lpc43xx/atimer.h	48;"	d
 ATIMER_SET_EN	libopencm3/include/libopencm3/lpc43xx/atimer.h	54;"	d
 ATIMER_SET_STAT	libopencm3/include/libopencm3/lpc43xx/atimer.h	66;"	d
 ATIMER_STATUS	libopencm3/include/libopencm3/lpc43xx/atimer.h	57;"	d
-AUDIO_CLK	lib/board.h	31;"	d
-AUDIO_PORT	lib/board.h	29;"	d
-AUDIO_UPDN	lib/board.h	30;"	d
+AUDIO_CLK	lib/board.h	32;"	d
+AUDIO_PORT	lib/board.h	30;"	d
+AUDIO_UPDN	lib/board.h	31;"	d
 AUXHFRCO	libopencm3/include/libopencm3/efm32/common/cmu_common.h	/^	AUXHFRCO, \/**< Internal, 1-28Mhz *\/$/;"	e	enum:cmu_osc
 AUXHFRCO	libopencm3/include/libopencm3/efm32/hg/cmu.h	/^	AUXHFRCO, \/**< Internal, 1-28Mhz *\/$/;"	e	enum:cmu_osc
 AYHZ	lib/ayconn.h	4;"	d
-AY_BC1	lib/board.h	13;"	d
-AY_BDIR	lib/board.h	14;"	d
-AY_CLOCK	lib/board.h	16;"	d
-AY_DATA_IOS	lib/board.h	11;"	d
-AY_DATA_PORT	lib/board.h	10;"	d
-AY_RESET	lib/board.h	15;"	d
-AY_SERV_PORT	lib/board.h	12;"	d
+AY_BC1	lib/board.h	14;"	d
+AY_BDIR	lib/board.h	15;"	d
+AY_CLOCK	lib/board.h	17;"	d
+AY_DATA_IOS	lib/board.h	12;"	d
+AY_DATA_PORT	lib/board.h	11;"	d
+AY_RESET	lib/board.h	16;"	d
+AY_SERV_PORT	lib/board.h	13;"	d
 BACKUP_REGS_BASE	libopencm3/include/libopencm3/gd32/f1x0/memorymap.h	58;"	d
 BACKUP_REGS_BASE	libopencm3/include/libopencm3/stm32/f1/memorymap.h	67;"	d
 BACKUP_REG_BASE	libopencm3/include/libopencm3/lpc43xx/memorymap.h	54;"	d
@@ -2479,9 +2479,9 @@ BKP_RTCCR_ASOE	libopencm3/include/libopencm3/stm32/f1/bkp.h	173;"	d
 BKP_RTCCR_ASOS	libopencm3/include/libopencm3/stm32/f1/bkp.h	170;"	d
 BKP_RTCCR_CAL_LSB	libopencm3/include/libopencm3/stm32/f1/bkp.h	179;"	d
 BKP_RTCCR_CCO	libopencm3/include/libopencm3/stm32/f1/bkp.h	176;"	d
-BOARD_AHB	lib/board.h	40;"	d
-BOARD_APB1	lib/board.h	41;"	d
-BOARD_APB2	lib/board.h	42;"	d
+BOARD_AHB	lib/board.h	41;"	d
+BOARD_APB1	lib/board.h	42;"	d
+BOARD_APB2	lib/board.h	44;"	d
 BOD_IRQHandler	libopencm3/include/libopencmsis/lpc13xx/irqhandlers.h	42;"	d
 BOD_IRQHandler	libopencm3/include/libopencmsis/lpc17xx/irqhandlers.h	16;"	d
 BPM_BASE	libopencm3/include/libopencm3/sam/4l/memorymap.h	79;"	d
@@ -2599,11 +2599,11 @@ BURTC_SYNCBUSY	libopencm3/include/libopencm3/efm32/common/burtc_common.h	41;"	d
 BURTC_SYNCBUSY_COMP0	libopencm3/include/libopencm3/efm32/common/burtc_common.h	166;"	d
 BURTC_SYNCBUSY_LPMODE	libopencm3/include/libopencm3/efm32/common/burtc_common.h	167;"	d
 BURTC_TIMESTAMP	libopencm3/include/libopencm3/efm32/common/burtc_common.h	30;"	d
-BUTTON_CLK_PIN	lib/board.h	27;"	d
-BUTTON_CLK_PORT	lib/board.h	26;"	d
-BUTTON_L	lib/board.h	23;"	d
-BUTTON_PORT	lib/board.h	22;"	d
-BUTTON_R	lib/board.h	24;"	d
+BUTTON_CLK_PIN	lib/board.h	28;"	d
+BUTTON_CLK_PORT	lib/board.h	27;"	d
+BUTTON_L	lib/board.h	24;"	d
+BUTTON_PORT	lib/board.h	23;"	d
+BUTTON_R	lib/board.h	25;"	d
 BX_CAN1_BASE	libopencm3/include/libopencm3/stm32/f0/memorymap.h	63;"	d
 BX_CAN1_BASE	libopencm3/include/libopencm3/stm32/f1/memorymap.h	64;"	d
 BX_CAN1_BASE	libopencm3/include/libopencm3/stm32/f2/memorymap.h	63;"	d
@@ -4807,6 +4807,7 @@ CM_SCS_SYST_RVR	libopencm3/include/libopencm3/cm3/scs.h	192;"	d
 CODESPACESRAM_BASE	libopencm3/include/libopencm3/efm32/tg/memorymap.h	48;"	d
 CODE_BASE	libopencm3/include/libopencm3/efm32/tg/memorymap.h	34;"	d
 COMMAND_CONTROL_BYTE	lib/disp.h	8;"	d
+COMMUNICATIONHZ	lib/ayconn.h	5;"	d
 COMP0_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	17;"	d
 COMP0_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	34;"	d
 COMP1	libopencm3/include/libopencm3/stm32/f0/comparator.h	41;"	d
@@ -6071,17 +6072,17 @@ DIRECTED0_SEMA4_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	1
 DIRECTED1_MCM_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	14;"	d
 DIRECTED2_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	15;"	d
 DIRECTED3_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	16;"	d
-DISPI2C	lib/board.h	37;"	d
+DISPI2C	lib/board.h	38;"	d
 DISPLAY_MAX_FREQ	lib/disp.h	37;"	d
 DISPLAY_NOP	lib/disp.h	44;"	d
 DISPLAY_ON	lib/disp.h	23;"	d
-DISPLAY_PORT	lib/board.h	18;"	d
+DISPLAY_PORT	lib/board.h	19;"	d
 DISP_COL	lib/disp.h	46;"	d
 DISP_NULL	lib/disp.h	35;"	d
 DISP_PAGE	lib/disp.h	47;"	d
-DISP_PINS	lib/board.h	19;"	d
+DISP_PINS	lib/board.h	20;"	d
 DISP_RAM_SIZE	lib/disp.h	48;"	d
-DISP_RESET	lib/board.h	20;"	d
+DISP_RESET	lib/board.h	21;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/ezr32wg/memorymap.h	38;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/hg/memorymap.h	37;"	d
 DI_ACMP0_CTRL	libopencm3/include/libopencm3/efm32/lg/memorymap.h	38;"	d
@@ -8330,6 +8331,7 @@ ENCRYPT_DES_ECB	libopencm3/include/libopencm3/stm32/common/crypto_common_f24.h	/
 ENCRYPT_GCM	libopencm3/include/libopencm3/stm32/f4/crypto.h	/^	ENCRYPT_GCM = CRYP_CR_ALGOMODE_TDES_ECB | CRYP_CR_ALGOMODE3,$/;"	e	enum:crypto_mode_mac
 ENCRYPT_TDES_CBC	libopencm3/include/libopencm3/stm32/common/crypto_common_f24.h	/^	ENCRYPT_TDES_CBC = CRYP_CR_ALGOMODE_TDES_CBC,$/;"	e	enum:crypto_mode
 ENCRYPT_TDES_ECB	libopencm3/include/libopencm3/stm32/common/crypto_common_f24.h	/^	ENCRYPT_TDES_ECB = CRYP_CR_ALGOMODE_TDES_ECB,$/;"	e	enum:crypto_mode
+END	lib/ayconn.c	/^    END,$/;"	e	enum:ayStates	file:
 ENDPOINT_COUNT	libopencm3/lib/usb/usb_efm32.c	42;"	d	file:
 ENDPOINT_COUNT	libopencm3/lib/usb/usb_efm32hg.c	37;"	d	file:
 END_DECLS	libopencm3/include/libopencm3/cm3/common.h	26;"	d
@@ -16777,7 +16779,6 @@ MSP432E4_GPIO_H	libopencm3/include/libopencm3/msp432/e4/gpio.h	36;"	d
 MSP432E4_MEMORYMAP_H	libopencm3/include/libopencm3/msp432/e4/memorymap.h	37;"	d
 MSP432E4_SYSTEMCONTROL_H	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	35;"	d
 MTB_BASE	libopencm3/include/libopencm3/sam/d/memorymap.h	37;"	d
-MUSIC_SIZE	aystm/main.c	9;"	d	file:
 MUTEX_LOCKED	libopencm3/include/libopencm3/cm3/sync.h	49;"	d
 MUTEX_UNLOCKED	libopencm3/include/libopencm3/cm3/sync.h	48;"	d
 NFC_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	92;"	d
@@ -21852,7 +21853,7 @@ RCC_AHBRSTR_DMA1RST	libopencm3/include/libopencm3/stm32/l1/rcc.h	247;"	d
 RCC_AHBRSTR_DMARST	libopencm3/include/libopencm3/stm32/g0/rcc.h	300;"	d
 RCC_AHBRSTR_DMARST	libopencm3/include/libopencm3/stm32/l0/rcc.h	272;"	d
 RCC_AHBRSTR_ETHMACRST	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	329;"	d
-RCC_AHBRSTR_ETHMACRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	447;"	d
+RCC_AHBRSTR_ETHMACRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	446;"	d
 RCC_AHBRSTR_FLASHRST	libopencm3/include/libopencm3/stm32/g0/rcc.h	299;"	d
 RCC_AHBRSTR_FLITFRST	libopencm3/include/libopencm3/stm32/l1/rcc.h	248;"	d
 RCC_AHBRSTR_FMCRST	libopencm3/include/libopencm3/stm32/f3/rcc.h	330;"	d
@@ -21879,7 +21880,7 @@ RCC_AHBRSTR_IOPHRST	libopencm3/include/libopencm3/stm32/f3/rcc.h	329;"	d
 RCC_AHBRSTR_MIFRST	libopencm3/include/libopencm3/stm32/l0/rcc.h	271;"	d
 RCC_AHBRSTR_OFFSET	libopencm3/include/libopencm3/stm32/g0/rcc.h	47;"	d
 RCC_AHBRSTR_OTGFSRST	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	330;"	d
-RCC_AHBRSTR_OTGFSRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	448;"	d
+RCC_AHBRSTR_OTGFSRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	447;"	d
 RCC_AHBRSTR_RNGRST	libopencm3/include/libopencm3/stm32/g0/rcc.h	296;"	d
 RCC_AHBRSTR_RNGRST	libopencm3/include/libopencm3/stm32/l0/rcc.h	268;"	d
 RCC_AHBRSTR_TSCRST	libopencm3/include/libopencm3/stm32/f0/rcc.h	327;"	d
@@ -21967,7 +21968,7 @@ RCC_APB1ENR_DACEN	libopencm3/include/libopencm3/stm32/l0/rcc.h	352;"	d
 RCC_APB1ENR_DACEN	libopencm3/include/libopencm3/stm32/l1/rcc.h	326;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	296;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	275;"	d
-RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	401;"	d
+RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	400;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	352;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	281;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	460;"	d
@@ -21976,7 +21977,7 @@ RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	357;"	d
 RCC_APB1ENR_I2C1EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	330;"	d
 RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	295;"	d
 RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	274;"	d
-RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	400;"	d
+RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	399;"	d
 RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	351;"	d
 RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	280;"	d
 RCC_APB1ENR_I2C2EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	459;"	d
@@ -22004,7 +22005,7 @@ RCC_APB1ENR_PWREN	libopencm3/include/libopencm3/stm32/l0/rcc.h	353;"	d
 RCC_APB1ENR_PWREN	libopencm3/include/libopencm3/stm32/l1/rcc.h	327;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	299;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	280;"	d
-RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	407;"	d
+RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	406;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	358;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	287;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	466;"	d
@@ -22012,7 +22013,7 @@ RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	354;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	362;"	d
 RCC_APB1ENR_SPI2EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	333;"	d
 RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	298;"	d
-RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	406;"	d
+RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	405;"	d
 RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	357;"	d
 RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	286;"	d
 RCC_APB1ENR_SPI3EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	465;"	d
@@ -22031,7 +22032,7 @@ RCC_APB1ENR_TIM14EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	468;"	d
 RCC_APB1ENR_TIM14EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	357;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	304;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	286;"	d
-RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	414;"	d
+RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	413;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	368;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	293;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	476;"	d
@@ -22040,26 +22041,26 @@ RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	368;"	d
 RCC_APB1ENR_TIM2EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	340;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	303;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	285;"	d
-RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	413;"	d
+RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	412;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	367;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	292;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	475;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	364;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	367;"	d
 RCC_APB1ENR_TIM3EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	339;"	d
-RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	412;"	d
+RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	411;"	d
 RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	366;"	d
 RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	291;"	d
 RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	474;"	d
 RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	363;"	d
 RCC_APB1ENR_TIM4EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	338;"	d
-RCC_APB1ENR_TIM5EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	411;"	d
+RCC_APB1ENR_TIM5EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	410;"	d
 RCC_APB1ENR_TIM5EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	365;"	d
 RCC_APB1ENR_TIM5EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	473;"	d
 RCC_APB1ENR_TIM5EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	362;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	302;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	284;"	d
-RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	410;"	d
+RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	409;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	364;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	290;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	472;"	d
@@ -22067,18 +22068,18 @@ RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	361;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	366;"	d
 RCC_APB1ENR_TIM6EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	337;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	283;"	d
-RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	409;"	d
+RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	408;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	363;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	289;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	471;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	360;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	365;"	d
 RCC_APB1ENR_TIM7EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	336;"	d
-RCC_APB1ENR_UART4EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	403;"	d
+RCC_APB1ENR_UART4EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	402;"	d
 RCC_APB1ENR_UART4EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	354;"	d
 RCC_APB1ENR_UART4EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	462;"	d
 RCC_APB1ENR_UART4EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	349;"	d
-RCC_APB1ENR_UART5EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	402;"	d
+RCC_APB1ENR_UART5EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	401;"	d
 RCC_APB1ENR_UART5EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	353;"	d
 RCC_APB1ENR_UART5EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	461;"	d
 RCC_APB1ENR_UART5EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	348;"	d
@@ -22088,7 +22089,7 @@ RCC_APB1ENR_UART8EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	452;"	d
 RCC_APB1ENR_UART8EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	337;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	297;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	279;"	d
-RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	405;"	d
+RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	404;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	356;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	285;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	464;"	d
@@ -22096,7 +22097,7 @@ RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/f7/rcc.h	351;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	361;"	d
 RCC_APB1ENR_USART2EN	libopencm3/include/libopencm3/stm32/l1/rcc.h	332;"	d
 RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f0/rcc.h	278;"	d
-RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	404;"	d
+RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f1/rcc.h	403;"	d
 RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f2/rcc.h	355;"	d
 RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	284;"	d
 RCC_APB1ENR_USART3EN	libopencm3/include/libopencm3/stm32/f4/rcc.h	463;"	d
@@ -22110,13 +22111,13 @@ RCC_APB1ENR_USART5EN	libopencm3/include/libopencm3/stm32/f3/rcc.h	282;"	d
 RCC_APB1ENR_USART5EN	libopencm3/include/libopencm3/stm32/l0/rcc.h	358;"	d
 RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	294;"	d
 RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/f0/rcc.h	273;"	d
-RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	399;"	d
+RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	398;"	d
 RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/f3/rcc.h	279;"	d
 RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/l0/rcc.h	355;"	d
 RCC_APB1ENR_USBEN	libopencm3/include/libopencm3/stm32/l1/rcc.h	328;"	d
 RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	300;"	d
 RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f0/rcc.h	281;"	d
-RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	408;"	d
+RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	407;"	d
 RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f2/rcc.h	359;"	d
 RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f3/rcc.h	288;"	d
 RCC_APB1ENR_WWDGEN	libopencm3/include/libopencm3/stm32/f4/rcc.h	467;"	d
@@ -22970,7 +22971,7 @@ RCC_BDCR	libopencm3/include/libopencm3/stm32/g0/rcc.h	70;"	d
 RCC_BDCR	libopencm3/include/libopencm3/stm32/l4/rcc.h	90;"	d
 RCC_BDCR_BDRST	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	308;"	d
 RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f0/rcc.h	290;"	d
-RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	419;"	d
+RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f1/rcc.h	418;"	d
 RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f2/rcc.h	482;"	d
 RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f3/rcc.h	297;"	d
 RCC_BDCR_BDRST	libopencm3/include/libopencm3/stm32/f4/rcc.h	614;"	d
@@ -22983,7 +22984,7 @@ RCC_BDCR_LSCOSEL	libopencm3/include/libopencm3/stm32/g0/rcc.h	578;"	d
 RCC_BDCR_LSCOSEL	libopencm3/include/libopencm3/stm32/l4/rcc.h	653;"	d
 RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	311;"	d
 RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f0/rcc.h	304;"	d
-RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f1/rcc.h	422;"	d
+RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f1/rcc.h	421;"	d
 RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f2/rcc.h	485;"	d
 RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f3/rcc.h	301;"	d
 RCC_BDCR_LSEBYP	libopencm3/include/libopencm3/stm32/f4/rcc.h	624;"	d
@@ -23019,7 +23020,7 @@ RCC_BDCR_LSEDRV_SHIFT	libopencm3/include/libopencm3/stm32/l4/rcc.h	672;"	d
 RCC_BDCR_LSEMOD	libopencm3/include/libopencm3/stm32/f4/rcc.h	623;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	313;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f0/rcc.h	306;"	d
-RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f1/rcc.h	424;"	d
+RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f1/rcc.h	423;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f2/rcc.h	487;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f3/rcc.h	303;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/f4/rcc.h	626;"	d
@@ -23028,7 +23029,7 @@ RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/g0/rcc.h	605;"	d
 RCC_BDCR_LSEON	libopencm3/include/libopencm3/stm32/l4/rcc.h	677;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	312;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f0/rcc.h	305;"	d
-RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f1/rcc.h	423;"	d
+RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f1/rcc.h	422;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f2/rcc.h	486;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f3/rcc.h	302;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/f4/rcc.h	625;"	d
@@ -23037,7 +23038,7 @@ RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/g0/rcc.h	604;"	d
 RCC_BDCR_LSERDY	libopencm3/include/libopencm3/stm32/l4/rcc.h	676;"	d
 RCC_BDCR_RTCEN	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	309;"	d
 RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f0/rcc.h	291;"	d
-RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	420;"	d
+RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f1/rcc.h	419;"	d
 RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f2/rcc.h	483;"	d
 RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f3/rcc.h	298;"	d
 RCC_BDCR_RTCEN	libopencm3/include/libopencm3/stm32/f4/rcc.h	615;"	d
@@ -23302,122 +23303,122 @@ RCC_CFGR2_ADCxPRES_PLL_CLK_DIV_4	libopencm3/include/libopencm3/stm32/f3/rcc.h	33
 RCC_CFGR2_ADCxPRES_PLL_CLK_DIV_6	libopencm3/include/libopencm3/stm32/f3/rcc.h	340;"	d
 RCC_CFGR2_ADCxPRES_PLL_CLK_DIV_64	libopencm3/include/libopencm3/stm32/f3/rcc.h	346;"	d
 RCC_CFGR2_ADCxPRES_PLL_CLK_DIV_8	libopencm3/include/libopencm3/stm32/f3/rcc.h	341;"	d
-RCC_CFGR2_I2S2SRC	libopencm3/include/libopencm3/stm32/f1/rcc.h	460;"	d
-RCC_CFGR2_I2S2SRC_PLL3_VCO_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	459;"	d
-RCC_CFGR2_I2S2SRC_SYSCLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	458;"	d
-RCC_CFGR2_I2S3SRC_PLL3_VCO_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	455;"	d
-RCC_CFGR2_I2S3SRC_SYSCLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	454;"	d
-RCC_CFGR2_PLL2MUL	libopencm3/include/libopencm3/stm32/f1/rcc.h	471;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL10	libopencm3/include/libopencm3/stm32/f1/rcc.h	493;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL11	libopencm3/include/libopencm3/stm32/f1/rcc.h	494;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL12	libopencm3/include/libopencm3/stm32/f1/rcc.h	495;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL13	libopencm3/include/libopencm3/stm32/f1/rcc.h	496;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL14	libopencm3/include/libopencm3/stm32/f1/rcc.h	497;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL16	libopencm3/include/libopencm3/stm32/f1/rcc.h	498;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL20	libopencm3/include/libopencm3/stm32/f1/rcc.h	499;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL8	libopencm3/include/libopencm3/stm32/f1/rcc.h	491;"	d
-RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL9	libopencm3/include/libopencm3/stm32/f1/rcc.h	492;"	d
-RCC_CFGR2_PLL2MUL_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	470;"	d
-RCC_CFGR2_PLL3MUL	libopencm3/include/libopencm3/stm32/f1/rcc.h	468;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL10	libopencm3/include/libopencm3/stm32/f1/rcc.h	482;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL11	libopencm3/include/libopencm3/stm32/f1/rcc.h	483;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL12	libopencm3/include/libopencm3/stm32/f1/rcc.h	484;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL13	libopencm3/include/libopencm3/stm32/f1/rcc.h	485;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL14	libopencm3/include/libopencm3/stm32/f1/rcc.h	486;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL16	libopencm3/include/libopencm3/stm32/f1/rcc.h	487;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL20	libopencm3/include/libopencm3/stm32/f1/rcc.h	488;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL8	libopencm3/include/libopencm3/stm32/f1/rcc.h	480;"	d
-RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL9	libopencm3/include/libopencm3/stm32/f1/rcc.h	481;"	d
-RCC_CFGR2_PLL3MUL_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	467;"	d
+RCC_CFGR2_I2S2SRC	libopencm3/include/libopencm3/stm32/f1/rcc.h	459;"	d
+RCC_CFGR2_I2S2SRC_PLL3_VCO_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	458;"	d
+RCC_CFGR2_I2S2SRC_SYSCLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	457;"	d
+RCC_CFGR2_I2S3SRC_PLL3_VCO_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	454;"	d
+RCC_CFGR2_I2S3SRC_SYSCLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	453;"	d
+RCC_CFGR2_PLL2MUL	libopencm3/include/libopencm3/stm32/f1/rcc.h	470;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL10	libopencm3/include/libopencm3/stm32/f1/rcc.h	492;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL11	libopencm3/include/libopencm3/stm32/f1/rcc.h	493;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL12	libopencm3/include/libopencm3/stm32/f1/rcc.h	494;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL13	libopencm3/include/libopencm3/stm32/f1/rcc.h	495;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL14	libopencm3/include/libopencm3/stm32/f1/rcc.h	496;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL16	libopencm3/include/libopencm3/stm32/f1/rcc.h	497;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL20	libopencm3/include/libopencm3/stm32/f1/rcc.h	498;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL8	libopencm3/include/libopencm3/stm32/f1/rcc.h	490;"	d
+RCC_CFGR2_PLL2MUL_PLL2_CLK_MUL9	libopencm3/include/libopencm3/stm32/f1/rcc.h	491;"	d
+RCC_CFGR2_PLL2MUL_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	469;"	d
+RCC_CFGR2_PLL3MUL	libopencm3/include/libopencm3/stm32/f1/rcc.h	467;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL10	libopencm3/include/libopencm3/stm32/f1/rcc.h	481;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL11	libopencm3/include/libopencm3/stm32/f1/rcc.h	482;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL12	libopencm3/include/libopencm3/stm32/f1/rcc.h	483;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL13	libopencm3/include/libopencm3/stm32/f1/rcc.h	484;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL14	libopencm3/include/libopencm3/stm32/f1/rcc.h	485;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL16	libopencm3/include/libopencm3/stm32/f1/rcc.h	486;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL20	libopencm3/include/libopencm3/stm32/f1/rcc.h	487;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL8	libopencm3/include/libopencm3/stm32/f1/rcc.h	479;"	d
+RCC_CFGR2_PLL3MUL_PLL3_CLK_MUL9	libopencm3/include/libopencm3/stm32/f1/rcc.h	480;"	d
+RCC_CFGR2_PLL3MUL_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	466;"	d
 RCC_CFGR2_PREDIV	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	334;"	d
 RCC_CFGR2_PREDIV	libopencm3/include/libopencm3/stm32/f0/rcc.h	338;"	d
 RCC_CFGR2_PREDIV	libopencm3/include/libopencm3/stm32/f3/rcc.h	350;"	d
-RCC_CFGR2_PREDIV1	libopencm3/include/libopencm3/stm32/f1/rcc.h	477;"	d
-RCC_CFGR2_PREDIV1SRC	libopencm3/include/libopencm3/stm32/f1/rcc.h	465;"	d
-RCC_CFGR2_PREDIV1SRC_HSE_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	463;"	d
-RCC_CFGR2_PREDIV1SRC_PLL2_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	464;"	d
-RCC_CFGR2_PREDIV1_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	476;"	d
-RCC_CFGR2_PREDIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	474;"	d
-RCC_CFGR2_PREDIV2_DIV10	libopencm3/include/libopencm3/stm32/f1/rcc.h	529;"	d
-RCC_CFGR2_PREDIV2_DIV11	libopencm3/include/libopencm3/stm32/f1/rcc.h	530;"	d
-RCC_CFGR2_PREDIV2_DIV12	libopencm3/include/libopencm3/stm32/f1/rcc.h	531;"	d
-RCC_CFGR2_PREDIV2_DIV13	libopencm3/include/libopencm3/stm32/f1/rcc.h	532;"	d
-RCC_CFGR2_PREDIV2_DIV14	libopencm3/include/libopencm3/stm32/f1/rcc.h	533;"	d
-RCC_CFGR2_PREDIV2_DIV15	libopencm3/include/libopencm3/stm32/f1/rcc.h	534;"	d
-RCC_CFGR2_PREDIV2_DIV16	libopencm3/include/libopencm3/stm32/f1/rcc.h	535;"	d
-RCC_CFGR2_PREDIV2_DIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	521;"	d
-RCC_CFGR2_PREDIV2_DIV3	libopencm3/include/libopencm3/stm32/f1/rcc.h	522;"	d
-RCC_CFGR2_PREDIV2_DIV4	libopencm3/include/libopencm3/stm32/f1/rcc.h	523;"	d
-RCC_CFGR2_PREDIV2_DIV5	libopencm3/include/libopencm3/stm32/f1/rcc.h	524;"	d
-RCC_CFGR2_PREDIV2_DIV6	libopencm3/include/libopencm3/stm32/f1/rcc.h	525;"	d
-RCC_CFGR2_PREDIV2_DIV7	libopencm3/include/libopencm3/stm32/f1/rcc.h	526;"	d
-RCC_CFGR2_PREDIV2_DIV8	libopencm3/include/libopencm3/stm32/f1/rcc.h	527;"	d
-RCC_CFGR2_PREDIV2_DIV9	libopencm3/include/libopencm3/stm32/f1/rcc.h	528;"	d
-RCC_CFGR2_PREDIV2_NODIV	libopencm3/include/libopencm3/stm32/f1/rcc.h	520;"	d
-RCC_CFGR2_PREDIV2_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	473;"	d
+RCC_CFGR2_PREDIV1	libopencm3/include/libopencm3/stm32/f1/rcc.h	476;"	d
+RCC_CFGR2_PREDIV1SRC	libopencm3/include/libopencm3/stm32/f1/rcc.h	464;"	d
+RCC_CFGR2_PREDIV1SRC_HSE_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	462;"	d
+RCC_CFGR2_PREDIV1SRC_PLL2_CLK	libopencm3/include/libopencm3/stm32/f1/rcc.h	463;"	d
+RCC_CFGR2_PREDIV1_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	475;"	d
+RCC_CFGR2_PREDIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	473;"	d
+RCC_CFGR2_PREDIV2_DIV10	libopencm3/include/libopencm3/stm32/f1/rcc.h	528;"	d
+RCC_CFGR2_PREDIV2_DIV11	libopencm3/include/libopencm3/stm32/f1/rcc.h	529;"	d
+RCC_CFGR2_PREDIV2_DIV12	libopencm3/include/libopencm3/stm32/f1/rcc.h	530;"	d
+RCC_CFGR2_PREDIV2_DIV13	libopencm3/include/libopencm3/stm32/f1/rcc.h	531;"	d
+RCC_CFGR2_PREDIV2_DIV14	libopencm3/include/libopencm3/stm32/f1/rcc.h	532;"	d
+RCC_CFGR2_PREDIV2_DIV15	libopencm3/include/libopencm3/stm32/f1/rcc.h	533;"	d
+RCC_CFGR2_PREDIV2_DIV16	libopencm3/include/libopencm3/stm32/f1/rcc.h	534;"	d
+RCC_CFGR2_PREDIV2_DIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	520;"	d
+RCC_CFGR2_PREDIV2_DIV3	libopencm3/include/libopencm3/stm32/f1/rcc.h	521;"	d
+RCC_CFGR2_PREDIV2_DIV4	libopencm3/include/libopencm3/stm32/f1/rcc.h	522;"	d
+RCC_CFGR2_PREDIV2_DIV5	libopencm3/include/libopencm3/stm32/f1/rcc.h	523;"	d
+RCC_CFGR2_PREDIV2_DIV6	libopencm3/include/libopencm3/stm32/f1/rcc.h	524;"	d
+RCC_CFGR2_PREDIV2_DIV7	libopencm3/include/libopencm3/stm32/f1/rcc.h	525;"	d
+RCC_CFGR2_PREDIV2_DIV8	libopencm3/include/libopencm3/stm32/f1/rcc.h	526;"	d
+RCC_CFGR2_PREDIV2_DIV9	libopencm3/include/libopencm3/stm32/f1/rcc.h	527;"	d
+RCC_CFGR2_PREDIV2_NODIV	libopencm3/include/libopencm3/stm32/f1/rcc.h	519;"	d
+RCC_CFGR2_PREDIV2_SHIFT	libopencm3/include/libopencm3/stm32/f1/rcc.h	472;"	d
 RCC_CFGR2_PREDIV_DIV10	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	344;"	d
 RCC_CFGR2_PREDIV_DIV10	libopencm3/include/libopencm3/stm32/f0/rcc.h	351;"	d
-RCC_CFGR2_PREDIV_DIV10	libopencm3/include/libopencm3/stm32/f1/rcc.h	511;"	d
+RCC_CFGR2_PREDIV_DIV10	libopencm3/include/libopencm3/stm32/f1/rcc.h	510;"	d
 RCC_CFGR2_PREDIV_DIV10	libopencm3/include/libopencm3/stm32/f3/rcc.h	363;"	d
 RCC_CFGR2_PREDIV_DIV11	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	345;"	d
 RCC_CFGR2_PREDIV_DIV11	libopencm3/include/libopencm3/stm32/f0/rcc.h	352;"	d
-RCC_CFGR2_PREDIV_DIV11	libopencm3/include/libopencm3/stm32/f1/rcc.h	512;"	d
+RCC_CFGR2_PREDIV_DIV11	libopencm3/include/libopencm3/stm32/f1/rcc.h	511;"	d
 RCC_CFGR2_PREDIV_DIV11	libopencm3/include/libopencm3/stm32/f3/rcc.h	364;"	d
 RCC_CFGR2_PREDIV_DIV12	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	346;"	d
 RCC_CFGR2_PREDIV_DIV12	libopencm3/include/libopencm3/stm32/f0/rcc.h	353;"	d
-RCC_CFGR2_PREDIV_DIV12	libopencm3/include/libopencm3/stm32/f1/rcc.h	513;"	d
+RCC_CFGR2_PREDIV_DIV12	libopencm3/include/libopencm3/stm32/f1/rcc.h	512;"	d
 RCC_CFGR2_PREDIV_DIV12	libopencm3/include/libopencm3/stm32/f3/rcc.h	365;"	d
 RCC_CFGR2_PREDIV_DIV13	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	347;"	d
 RCC_CFGR2_PREDIV_DIV13	libopencm3/include/libopencm3/stm32/f0/rcc.h	354;"	d
-RCC_CFGR2_PREDIV_DIV13	libopencm3/include/libopencm3/stm32/f1/rcc.h	514;"	d
+RCC_CFGR2_PREDIV_DIV13	libopencm3/include/libopencm3/stm32/f1/rcc.h	513;"	d
 RCC_CFGR2_PREDIV_DIV13	libopencm3/include/libopencm3/stm32/f3/rcc.h	366;"	d
 RCC_CFGR2_PREDIV_DIV14	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	348;"	d
 RCC_CFGR2_PREDIV_DIV14	libopencm3/include/libopencm3/stm32/f0/rcc.h	355;"	d
-RCC_CFGR2_PREDIV_DIV14	libopencm3/include/libopencm3/stm32/f1/rcc.h	515;"	d
+RCC_CFGR2_PREDIV_DIV14	libopencm3/include/libopencm3/stm32/f1/rcc.h	514;"	d
 RCC_CFGR2_PREDIV_DIV14	libopencm3/include/libopencm3/stm32/f3/rcc.h	367;"	d
 RCC_CFGR2_PREDIV_DIV15	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	349;"	d
 RCC_CFGR2_PREDIV_DIV15	libopencm3/include/libopencm3/stm32/f0/rcc.h	356;"	d
-RCC_CFGR2_PREDIV_DIV15	libopencm3/include/libopencm3/stm32/f1/rcc.h	516;"	d
+RCC_CFGR2_PREDIV_DIV15	libopencm3/include/libopencm3/stm32/f1/rcc.h	515;"	d
 RCC_CFGR2_PREDIV_DIV15	libopencm3/include/libopencm3/stm32/f3/rcc.h	368;"	d
 RCC_CFGR2_PREDIV_DIV16	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	350;"	d
 RCC_CFGR2_PREDIV_DIV16	libopencm3/include/libopencm3/stm32/f0/rcc.h	357;"	d
-RCC_CFGR2_PREDIV_DIV16	libopencm3/include/libopencm3/stm32/f1/rcc.h	517;"	d
+RCC_CFGR2_PREDIV_DIV16	libopencm3/include/libopencm3/stm32/f1/rcc.h	516;"	d
 RCC_CFGR2_PREDIV_DIV16	libopencm3/include/libopencm3/stm32/f3/rcc.h	369;"	d
 RCC_CFGR2_PREDIV_DIV2	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	336;"	d
 RCC_CFGR2_PREDIV_DIV2	libopencm3/include/libopencm3/stm32/f0/rcc.h	343;"	d
-RCC_CFGR2_PREDIV_DIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	503;"	d
+RCC_CFGR2_PREDIV_DIV2	libopencm3/include/libopencm3/stm32/f1/rcc.h	502;"	d
 RCC_CFGR2_PREDIV_DIV2	libopencm3/include/libopencm3/stm32/f3/rcc.h	355;"	d
 RCC_CFGR2_PREDIV_DIV3	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	337;"	d
 RCC_CFGR2_PREDIV_DIV3	libopencm3/include/libopencm3/stm32/f0/rcc.h	344;"	d
-RCC_CFGR2_PREDIV_DIV3	libopencm3/include/libopencm3/stm32/f1/rcc.h	504;"	d
+RCC_CFGR2_PREDIV_DIV3	libopencm3/include/libopencm3/stm32/f1/rcc.h	503;"	d
 RCC_CFGR2_PREDIV_DIV3	libopencm3/include/libopencm3/stm32/f3/rcc.h	356;"	d
 RCC_CFGR2_PREDIV_DIV4	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	338;"	d
 RCC_CFGR2_PREDIV_DIV4	libopencm3/include/libopencm3/stm32/f0/rcc.h	345;"	d
-RCC_CFGR2_PREDIV_DIV4	libopencm3/include/libopencm3/stm32/f1/rcc.h	505;"	d
+RCC_CFGR2_PREDIV_DIV4	libopencm3/include/libopencm3/stm32/f1/rcc.h	504;"	d
 RCC_CFGR2_PREDIV_DIV4	libopencm3/include/libopencm3/stm32/f3/rcc.h	357;"	d
 RCC_CFGR2_PREDIV_DIV5	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	339;"	d
 RCC_CFGR2_PREDIV_DIV5	libopencm3/include/libopencm3/stm32/f0/rcc.h	346;"	d
-RCC_CFGR2_PREDIV_DIV5	libopencm3/include/libopencm3/stm32/f1/rcc.h	506;"	d
+RCC_CFGR2_PREDIV_DIV5	libopencm3/include/libopencm3/stm32/f1/rcc.h	505;"	d
 RCC_CFGR2_PREDIV_DIV5	libopencm3/include/libopencm3/stm32/f3/rcc.h	358;"	d
 RCC_CFGR2_PREDIV_DIV6	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	340;"	d
 RCC_CFGR2_PREDIV_DIV6	libopencm3/include/libopencm3/stm32/f0/rcc.h	347;"	d
-RCC_CFGR2_PREDIV_DIV6	libopencm3/include/libopencm3/stm32/f1/rcc.h	507;"	d
+RCC_CFGR2_PREDIV_DIV6	libopencm3/include/libopencm3/stm32/f1/rcc.h	506;"	d
 RCC_CFGR2_PREDIV_DIV6	libopencm3/include/libopencm3/stm32/f3/rcc.h	359;"	d
 RCC_CFGR2_PREDIV_DIV7	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	341;"	d
 RCC_CFGR2_PREDIV_DIV7	libopencm3/include/libopencm3/stm32/f0/rcc.h	348;"	d
-RCC_CFGR2_PREDIV_DIV7	libopencm3/include/libopencm3/stm32/f1/rcc.h	508;"	d
+RCC_CFGR2_PREDIV_DIV7	libopencm3/include/libopencm3/stm32/f1/rcc.h	507;"	d
 RCC_CFGR2_PREDIV_DIV7	libopencm3/include/libopencm3/stm32/f3/rcc.h	360;"	d
 RCC_CFGR2_PREDIV_DIV8	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	342;"	d
 RCC_CFGR2_PREDIV_DIV8	libopencm3/include/libopencm3/stm32/f0/rcc.h	349;"	d
-RCC_CFGR2_PREDIV_DIV8	libopencm3/include/libopencm3/stm32/f1/rcc.h	509;"	d
+RCC_CFGR2_PREDIV_DIV8	libopencm3/include/libopencm3/stm32/f1/rcc.h	508;"	d
 RCC_CFGR2_PREDIV_DIV8	libopencm3/include/libopencm3/stm32/f3/rcc.h	361;"	d
 RCC_CFGR2_PREDIV_DIV9	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	343;"	d
 RCC_CFGR2_PREDIV_DIV9	libopencm3/include/libopencm3/stm32/f0/rcc.h	350;"	d
-RCC_CFGR2_PREDIV_DIV9	libopencm3/include/libopencm3/stm32/f1/rcc.h	510;"	d
+RCC_CFGR2_PREDIV_DIV9	libopencm3/include/libopencm3/stm32/f1/rcc.h	509;"	d
 RCC_CFGR2_PREDIV_DIV9	libopencm3/include/libopencm3/stm32/f3/rcc.h	362;"	d
 RCC_CFGR2_PREDIV_NODIV	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	335;"	d
 RCC_CFGR2_PREDIV_NODIV	libopencm3/include/libopencm3/stm32/f0/rcc.h	342;"	d
-RCC_CFGR2_PREDIV_NODIV	libopencm3/include/libopencm3/stm32/f1/rcc.h	502;"	d
+RCC_CFGR2_PREDIV_NODIV	libopencm3/include/libopencm3/stm32/f1/rcc.h	501;"	d
 RCC_CFGR2_PREDIV_NODIV	libopencm3/include/libopencm3/stm32/f3/rcc.h	354;"	d
 RCC_CFGR3	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	58;"	d
 RCC_CFGR3	libopencm3/include/libopencm3/stm32/f0/rcc.h	60;"	d
@@ -24759,7 +24760,7 @@ RCC_CSR_FWRSTF	libopencm3/include/libopencm3/stm32/l0/rcc.h	475;"	d
 RCC_CSR_FWRSTF	libopencm3/include/libopencm3/stm32/l4/rcc.h	688;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	319;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	312;"	d
-RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	430;"	d
+RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	429;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	493;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	309;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	635;"	d
@@ -24770,7 +24771,7 @@ RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/l1/rcc.h	385;"	d
 RCC_CSR_IWDGRSTF	libopencm3/include/libopencm3/stm32/l4/rcc.h	683;"	d
 RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	317;"	d
 RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	310;"	d
-RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	428;"	d
+RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	427;"	d
 RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	491;"	d
 RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	307;"	d
 RCC_CSR_LPWRRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	633;"	d
@@ -24795,7 +24796,7 @@ RCC_CSR_LSERDY	libopencm3/include/libopencm3/stm32/l0/rcc.h	497;"	d
 RCC_CSR_LSERDY	libopencm3/include/libopencm3/stm32/l1/rcc.h	405;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	325;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f0/rcc.h	323;"	d
-RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f1/rcc.h	439;"	d
+RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f1/rcc.h	438;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f2/rcc.h	503;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f3/rcc.h	316;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/f4/rcc.h	645;"	d
@@ -24806,7 +24807,7 @@ RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/l1/rcc.h	408;"	d
 RCC_CSR_LSION	libopencm3/include/libopencm3/stm32/l4/rcc.h	708;"	d
 RCC_CSR_LSIRDY	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	324;"	d
 RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f0/rcc.h	322;"	d
-RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f1/rcc.h	438;"	d
+RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f1/rcc.h	437;"	d
 RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f2/rcc.h	502;"	d
 RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f3/rcc.h	315;"	d
 RCC_CSR_LSIRDY	libopencm3/include/libopencm3/stm32/f4/rcc.h	644;"	d
@@ -24829,7 +24830,7 @@ RCC_CSR_OBLRSTF	libopencm3/include/libopencm3/stm32/l1/rcc.h	389;"	d
 RCC_CSR_OBLRSTF	libopencm3/include/libopencm3/stm32/l4/rcc.h	687;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	322;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	315;"	d
-RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	433;"	d
+RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	432;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	496;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	312;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	638;"	d
@@ -24840,7 +24841,7 @@ RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/l1/rcc.h	388;"	d
 RCC_CSR_PINRSTF	libopencm3/include/libopencm3/stm32/l4/rcc.h	686;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	321;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	314;"	d
-RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	432;"	d
+RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	431;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	495;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	311;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	637;"	d
@@ -24849,7 +24850,7 @@ RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/l0/rcc.h	472;"	d
 RCC_CSR_PORRSTF	libopencm3/include/libopencm3/stm32/l1/rcc.h	387;"	d
 RCC_CSR_PWRSTF	libopencm3/include/libopencm3/stm32/g0/rcc.h	613;"	d
 RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f0/rcc.h	318;"	d
-RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f1/rcc.h	435;"	d
+RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f1/rcc.h	434;"	d
 RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f2/rcc.h	499;"	d
 RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f4/rcc.h	641;"	d
 RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/f7/rcc.h	516;"	d
@@ -24858,7 +24859,7 @@ RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/l1/rcc.h	391;"	d
 RCC_CSR_RESET_FLAGS	libopencm3/include/libopencm3/stm32/l4/rcc.h	690;"	d
 RCC_CSR_RMVF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	323;"	d
 RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f0/rcc.h	317;"	d
-RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f1/rcc.h	434;"	d
+RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f1/rcc.h	433;"	d
 RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f2/rcc.h	498;"	d
 RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f3/rcc.h	314;"	d
 RCC_CSR_RMVF	libopencm3/include/libopencm3/stm32/f4/rcc.h	640;"	d
@@ -24885,7 +24886,7 @@ RCC_CSR_RTCSEL_SHIFT	libopencm3/include/libopencm3/stm32/l0/rcc.h	482;"	d
 RCC_CSR_RTCSEL_SHIFT	libopencm3/include/libopencm3/stm32/l1/rcc.h	396;"	d
 RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	320;"	d
 RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	313;"	d
-RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	431;"	d
+RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	430;"	d
 RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	494;"	d
 RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	310;"	d
 RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	636;"	d
@@ -24897,7 +24898,7 @@ RCC_CSR_SFTRSTF	libopencm3/include/libopencm3/stm32/l4/rcc.h	684;"	d
 RCC_CSR_V18PWRRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	321;"	d
 RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/gd32/f1x0/rcc.h	318;"	d
 RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f0/rcc.h	311;"	d
-RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	429;"	d
+RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f1/rcc.h	428;"	d
 RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f2/rcc.h	492;"	d
 RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f3/rcc.h	308;"	d
 RCC_CSR_WWDGRSTF	libopencm3/include/libopencm3/stm32/f4/rcc.h	634;"	d
@@ -30083,7 +30084,7 @@ SYSCFG_SWPR	libopencm3/include/libopencm3/stm32/l4/syscfg.h	48;"	d
 SYSCFG_SWPR2	libopencm3/include/libopencm3/stm32/l4/syscfg.h	50;"	d
 SYSCFG_SWPR2_PxWP	libopencm3/include/libopencm3/stm32/l4/syscfg.h	118;"	d
 SYSCFG_SWPR_PxWP	libopencm3/include/libopencm3/stm32/l4/syscfg.h	108;"	d
-SYSCLKHZ	lib/board.h	7;"	d
+SYSCLKHZ	lib/board.h	8;"	d
 SYSCON_BASE	libopencm3/include/libopencm3/lpc17xx/memorymap.h	84;"	d
 SYSCTL_ALTCLKCFG	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	71;"	d
 SYSCTL_ALTCLKCFG_ALTCLK_LFIOSC	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	795;"	d
@@ -31929,7 +31930,7 @@ TIMER6A_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	96;"	
 TIMER6B_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	97;"	d
 TIMER7A_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	98;"	d
 TIMER7B_IRQHandler	libopencm3/include/libopencmsis/msp432/e4/irqhandlers.h	99;"	d
-TIMERSHZ	lib/board.h	8;"	d
+TIMERSHZ	lib/board.h	9;"	d
 TIMER_CC0_CCV	libopencm3/include/libopencm3/efm32/common/timer_common.h	44;"	d
 TIMER_CC0_CCVB	libopencm3/include/libopencm3/efm32/common/timer_common.h	46;"	d
 TIMER_CC0_CCVP	libopencm3/include/libopencm3/efm32/common/timer_common.h	45;"	d
@@ -35205,15 +35206,15 @@ USBC0_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	84;"	d
 USBC1_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	85;"	d
 USBC_BASE	libopencm3/include/libopencm3/sam/4l/memorymap.h	63;"	d
 USBC_IRQHandler	libopencm3/include/libopencmsis/sam/4l/irqhandlers.h	27;"	d
-USBDM	lib/board.h	34;"	d
-USBDP	lib/board.h	35;"	d
+USBDM	lib/board.h	35;"	d
+USBDP	lib/board.h	36;"	d
 USBD_PM_TOP	libopencm3/lib/stm32/common/st_usbfs_core.h	33;"	d
 USBD_REQ_HANDLED	libopencm3/include/libopencm3/usb/usbd.h	/^	USBD_REQ_HANDLED	= 1,$/;"	e	enum:usbd_request_return_codes
 USBD_REQ_NEXT_CALLBACK	libopencm3/include/libopencm3/usb/usbd.h	/^	USBD_REQ_NEXT_CALLBACK	= 2,$/;"	e	enum:usbd_request_return_codes
 USBD_REQ_NOTSUPP	libopencm3/include/libopencm3/usb/usbd.h	/^	USBD_REQ_NOTSUPP	= 0,$/;"	e	enum:usbd_request_return_codes
 USBPHY0_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	59;"	d
 USBPHY1_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	60;"	d
-USBPORT	lib/board.h	33;"	d
+USBPORT	lib/board.h	34;"	d
 USB_ACT_IRQHandler	libopencm3/include/libopencmsis/lpc17xx/irqhandlers.h	42;"	d
 USB_AUDIO_DT_CS_CONFIGURATION	libopencm3/include/libopencm3/usb/audio.h	60;"	d
 USB_AUDIO_DT_CS_DEVICE	libopencm3/include/libopencm3/usb/audio.h	59;"	d
@@ -36130,6 +36131,7 @@ WDT_SR_WDERR	libopencm3/include/libopencm3/sam/wdt.h	54;"	d
 WDT_SR_WDUNF	libopencm3/include/libopencm3/sam/wdt.h	55;"	d
 WKPU0_IRQHandler	libopencm3/include/libopencmsis/vf6xx/irqhandlers.h	101;"	d
 WRITE	lib/ayconn.c	/^    WRITE,$/;"	e	enum:ayStates	file:
+WRITE_DELAY	lib/ayconn.c	/^    WRITE_DELAY,$/;"	e	enum:ayStates	file:
 WTIMER0	libopencm3/include/libopencm3/lm4f/memorymap.h	60;"	d
 WTIMER0A_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	92;"	d
 WTIMER0B_IRQHandler	libopencm3/include/libopencmsis/lm3s/irqhandlers.h	91;"	d
@@ -36233,7 +36235,7 @@ _REG_BIT	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	1346;"	d
 _REG_BIT	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	1448;"	d
 _REG_BIT	libopencm3/include/libopencm3/stm32/f0/rcc.h	411;"	d
 _REG_BIT	libopencm3/include/libopencm3/stm32/f0/rcc.h	518;"	d
-_REG_BIT	libopencm3/include/libopencm3/stm32/f1/rcc.h	548;"	d
+_REG_BIT	libopencm3/include/libopencm3/stm32/f1/rcc.h	547;"	d
 _REG_BIT	libopencm3/include/libopencm3/stm32/f2/rcc.h	558;"	d
 _REG_BIT	libopencm3/include/libopencm3/stm32/f2/rcc.h	776;"	d
 _REG_BIT	libopencm3/include/libopencm3/stm32/f3/rcc.h	449;"	d
@@ -36625,10 +36627,10 @@ apb_frequency	libopencm3/include/libopencm3/stm32/g0/rcc.h	/^	uint32_t apb_frequ
 args	libopencm3/scripts/gendoxylayout.py	/^args = parser.parse_args()$/;"	v
 asc	libopencm3/lib/usb/usb_msc.c	/^	uint8_t asc;$/;"	m	struct:sbc_sense_info	file:
 ascq	libopencm3/lib/usb/usb_msc.c	/^	uint8_t ascq;$/;"	m	struct:sbc_sense_info	file:
-ayData	lib/ayconn.c	/^} ayData = {0,0,0};$/;"	v	typeref:struct:ayStruct
+ayData	lib/ayconn.c	/^} ayData = {0,0,COMPLETE};$/;"	v	typeref:struct:ayStruct
 ayInterface	lib/ayconn.c	/^void ayInterface()$/;"	f
 aySend	lib/ayconn.c	/^void aySend(uint8_t addr, uint8_t data)$/;"	f
-aySendBl	lib/ayconn.c	/^void aySendBl(uint8_t addr, uint8_t data)$/;"	f
+aySendBlocking	lib/ayconn.c	/^void aySendBlocking(uint8_t addr, uint8_t data)$/;"	f
 ayStates	lib/ayconn.c	/^enum ayStates {$/;"	g	file:
 ayStruct	lib/ayconn.c	/^volatile struct ayStruct {$/;"	s	file:
 bAlternateSetting	libopencm3/include/libopencm3/usb/usbstd.h	/^	uint8_t bAlternateSetting;$/;"	m	struct:usb_interface_descriptor
@@ -37012,6 +37014,7 @@ debug_monitor	libopencm3/include/libopencm3/cm3/vector.h	/^	vector_table_entry_t
 debug_monitor_handler	libopencm3/lib/cm3/vector.c	123;"	d	file:
 defs	libopencm3/scripts/genlink.py	/^        defs = ' '.join('-D_%s=%s' % d for d in device['defs'])$/;"	v
 delay4811	lib/lm4811.c	/^void delay4811()$/;"	f
+delay_s	lib/board.c	/^void delay_s(uint16_t s)$/;"	f
 delay_setup	libopencm3/tests/gadget-zero/delay.c	/^void delay_setup(void)$/;"	f
 delay_setup	libopencm3/tests/gadget-zero/delay_efm32.c	/^void delay_setup(void)$/;"	f
 delay_setup	libopencm3/tests/gadget-zero/main-tilm4f120xl.c	/^void delay_setup(void) {$/;"	f
@@ -37033,6 +37036,8 @@ dfu_state	libopencm3/include/libopencm3/usb/dfu.h	/^enum dfu_state {$/;"	g
 dfu_status	libopencm3/include/libopencm3/usb/dfu.h	/^enum dfu_status {$/;"	g
 disconnect	libopencm3/lib/usb/usb_private.h	/^	void (*disconnect)(usbd_device *usbd_dev, bool disconnected);$/;"	m	struct:_usbd_driver
 dispData	lib/disp.h	/^uint8_t dispData[DISP_RAM_SIZE];$/;"	v
+div	lib/ayconn.c	/^uint32_t div;$/;"	v
+div1	lib/ayconn.c	/^uint32_t div1;$/;"	v
 dma_calc_end_from_start	libopencm3/lib/efm32/common/dma_common.c	/^static inline uint32_t dma_calc_end_from_start(uint32_t start, uint8_t inc,$/;"	f	file:
 dma_ch	libopencm3/include/libopencm3/efm32/common/dma_common.h	/^enum dma_ch {$/;"	g
 dma_chan_desc	libopencm3/include/libopencm3/efm32/common/dma_common.h	/^struct dma_chan_desc {$/;"	s
@@ -37546,6 +37551,7 @@ hpre	libopencm3/include/libopencm3/stm32/g0/rcc.h	/^	uint8_t hpre;$/;"	m	struct:
 hpre	libopencm3/include/libopencm3/stm32/l0/rcc.h	/^	uint8_t hpre;$/;"	m	struct:rcc_clock_scale
 hpre	libopencm3/include/libopencm3/stm32/l1/rcc.h	/^	uint8_t hpre;$/;"	m	struct:rcc_clock_scale
 hsisys_div	libopencm3/include/libopencm3/stm32/g0/rcc.h	/^	uint8_t hsisys_div;$/;"	m	struct:rcc_clock_scale
+hzhz	lib/ayconn.c	/^uint32_t hzhz;$/;"	v
 i2c0_init	libopencm3/lib/lpc43xx/i2c.c	/^void i2c0_init(const uint16_t duty_cycle_count)$/;"	f
 i2c0_rx_byte	libopencm3/lib/lpc43xx/i2c.c	/^uint8_t i2c0_rx_byte(void)$/;"	f
 i2c0_stop	libopencm3/lib/lpc43xx/i2c.c	/^void i2c0_stop(void)$/;"	f
@@ -37662,6 +37668,7 @@ iface_sourcesink	libopencm3/tests/gadget-zero/usb-gadget0.c	/^static const struc
 ifaces	lib/usbserial.c	/^static const struct usb_interface ifaces[] = {$/;"	v	typeref:struct:usb_interface	file:
 ifaces_loopback	libopencm3/tests/gadget-zero/usb-gadget0.c	/^static const struct usb_interface ifaces_loopback[] = {$/;"	v	typeref:struct:usb_interface	file:
 ifaces_sourcesink	libopencm3/tests/gadget-zero/usb-gadget0.c	/^static const struct usb_interface ifaces_sourcesink[] = {$/;"	v	typeref:struct:usb_interface	file:
+im2cr	lib/ayconn.c	/^uint32_t im2cr;$/;"	v
 includeguard	libopencm3/include/libopencm3/efm32/ezr32wg/irq.json	/^    "includeguard": "LIBOPENCM3_EZR32WG_NVIC_H"$/;"	f
 includeguard	libopencm3/include/libopencm3/efm32/g/irq.json	/^    "includeguard": "LIBOPENCM3_EFM32G_NVIC_H"$/;"	f
 includeguard	libopencm3/include/libopencm3/efm32/gg/irq.json	/^    "includeguard": "LIBOPENCM3_EFM32GG_NVIC_H"$/;"	f
@@ -37841,7 +37848,6 @@ msi_range	libopencm3/include/libopencm3/stm32/l1/rcc.h	/^	uint8_t msi_range;$/;"
 msp432_clock_mode	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	/^enum msp432_clock_mode {$/;"	g
 msp432_periph	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	/^enum msp432_periph {$/;"	g
 msp432_power_mode	libopencm3/include/libopencm3/msp432/e4/systemcontrol.h	/^enum msp432_power_mode {$/;"	g
-music	aystm/main.c	/^uint8_t music[MUSIC_SIZE] = { 0,$/;"	v
 mutex_lock	libopencm3/lib/cm3/sync.c	/^void mutex_lock(mutex_t *m)$/;"	f
 mutex_t	libopencm3/include/libopencm3/cm3/sync.h	/^typedef uint32_t mutex_t;$/;"	t
 mutex_trylock	libopencm3/lib/cm3/sync.c	/^uint32_t mutex_trylock(mutex_t *m)$/;"	f
@@ -38806,7 +38812,7 @@ test_write_perf	libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_writ
 test_write_simple	libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_simple(self):$/;"	m	class:TestConfigSourceSink
 test_write_zlp	libopencm3/tests/gadget-zero/test_gadget0.py	/^    def test_write_zlp(self):$/;"	m	class:TestConfigSourceSink
 this_clock_config	libopencm3/tests/gadget-zero/main-stm32l1-generic.c	/^const struct rcc_clock_scale this_clock_config = {$/;"	v	typeref:struct:rcc_clock_scale
-tim1_up_isr	lib/ayconn.c	/^void tim1_up_isr()$/;"	f
+tim2_isr	lib/ayconn.c	/^void tim2_isr()$/;"	f
 tim_ch	libopencm3/include/libopencm3/efm32/common/timer_common.h	/^enum tim_ch {$/;"	g
 tim_et_pol	libopencm3/include/libopencm3/stm32/common/timer_common_all.h	/^enum tim_et_pol {$/;"	g
 tim_ic_filter	libopencm3/include/libopencm3/stm32/common/timer_common_all.h	/^enum tim_ic_filter {$/;"	g
@@ -38817,6 +38823,7 @@ tim_ic_pol	libopencm3/include/libopencm3/stm32/f1/timer.h	/^enum tim_ic_pol {$/;
 tim_ic_psc	libopencm3/include/libopencm3/stm32/common/timer_common_all.h	/^enum tim_ic_psc {$/;"	g
 tim_oc_id	libopencm3/include/libopencm3/stm32/common/timer_common_all.h	/^enum tim_oc_id {$/;"	g
 tim_oc_mode	libopencm3/include/libopencm3/stm32/common/timer_common_all.h	/^enum tim_oc_mode {$/;"	g
+timeoutt	lib/ayconn.c	/^uint32_t timeoutt = 0xee;$/;"	v
 timer_clear_flag	libopencm3/lib/stm32/common/timer_common_all.c	/^void timer_clear_flag(uint32_t timer_peripheral, uint32_t flag)$/;"	f
 timer_continuous_mode	libopencm3/lib/stm32/common/timer_common_all.c	/^void timer_continuous_mode(uint32_t timer_peripheral)$/;"	f
 timer_direction_down	libopencm3/lib/stm32/common/timer_common_all.c	/^void timer_direction_down(uint32_t timer_peripheral)$/;"	f
