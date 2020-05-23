@@ -1,0 +1,38 @@
+#define reg16       16
+#define reg17       17
+#define NO_ATT      0xff
+
+#define reg18       18
+#define MUTE_L      0x01
+#define MUTE_R      0x02
+#define OVER_L      0x40
+#define SOFT_RESET  0x80
+
+#define reg19       19
+#define DAC_ENL     0x01
+#define DAC_ENR     0x02
+
+#define DMF_44100   0x10
+#define DMF_48000   0x30
+#define DMF_32000   0x90
+
+#define reg20       20
+#define FMT_24BIT   0x00
+#define FMT_20BIT   0x01
+#define FMT_18BIT   0x02
+#define FMT_16BIT   0x03
+#define FMT_I2S     0x04
+#define FMT_LEFT_J  0x05
+
+#define ROLLOFF     0x20
+
+#define reg22       22
+#define INV_OUT     0x01
+#define ZREV        0x02
+#define AZRO        0x04
+
+void attenuation(float db)
+{
+    write(16,(uint32_t)(db*2));
+    write(17,(uint32_t)(db*2));
+}
