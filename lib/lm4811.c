@@ -21,7 +21,6 @@ void delay4811()
 void upDn(uint8_t n, uint8_t up)
 {
     if(n > SOUNDMAX) n = SOUNDMAX;
-
     if( up ) {
         gpio_set(AUDIO_PORT, AUDIO_UPDN);
     } else {
@@ -36,7 +35,6 @@ void upDn(uint8_t n, uint8_t up)
     gpio_clear(AUDIO_PORT, AUDIO_CLK | AUDIO_UPDN);
 }
 
-
 void init4811(uint8_t volume)
 {
     // что бы порты 14 и 15 никто не беспокоил
@@ -46,7 +44,6 @@ void init4811(uint8_t volume)
     BKP_RTCCR = (uint32_t)0;
     BKP_CSR = (uint32_t)0;
     RCC_BDCR |= (uint32_t)RCC_BDCR_BDRST;
-
     gpio_set_mode(AUDIO_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AUDIO_UPDN | AUDIO_CLK);
     gpio_clear(AUDIO_PORT, AUDIO_CLK | AUDIO_UPDN);
 
@@ -56,11 +53,9 @@ void init4811(uint8_t volume)
     setVolume(volume);
 }
 
-
 void setVolume(uint8_t volume)
 {
     if(volume == volumeGl) return;
-
     if(volumeGl < volume) {
         upDn(volume - volumeGl, 1);
     } else {

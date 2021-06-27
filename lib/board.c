@@ -37,12 +37,10 @@ void sysClk()
                   | (RCC_CFGR_PPRE1_HCLK_NODIV << RCC_CFGR_PPRE1_SHIFT)     \
                   | (RCC_CFGR_HPRE_SYSCLK_DIV2 << RCC_CFGR_HPRE_SHIFT);
     RCC_CFGR = cfgr;
-
     // что то с памятью, копипаста с функций stmhal
     FLASH_ACR |= (uint32_t)FLASH_ACR_PRFTBE;
     FLASH_ACR &= ((uint32_t)~FLASH_ACR_LATENCY_MASK);
     FLASH_ACR |= (uint32_t)FLASH_ACR_LATENCY_2WS;
-
     // передергиваем PLL, что бы точно все включилось
     timeout = 9e6;
     if ( (RCC_CFGR & RCC_CFGR_SWS) == (RCC_CFGR_SWS_SYSCLKSEL_PLLCLK << RCC_CFGR_SWS_SHIFT) )

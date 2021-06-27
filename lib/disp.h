@@ -46,7 +46,7 @@
 #define DISP_COL  128
 #define DISP_PAGE 8
 #define DISP_RAM_SIZE 1024
-uint8_t dispData[DISP_RAM_SIZE];
+uint8_t dispData[DISP_RAM_SIZE+1];
 
 void sdInit(void);
 void flashlight(void);

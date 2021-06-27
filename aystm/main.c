@@ -5,11 +5,6 @@
 #include "lm4811.h"
 #include "ayconn.h"
 
-#include "../libopencm3/include/libopencm3/stm32/pwr.h"
-#include "../libopencm3/include/libopencm3/stm32/gpio.h"
-#include "../libopencm3/include/libopencm3/stm32/rcc.h"
-#include "../libopencm3/include/libopencm3/stm32/f1/bkp.h"
-#include "../libopencm3/include/libopencm3/stm32/timer.h"
 
 int main(void)
 {

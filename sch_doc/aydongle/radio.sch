@@ -1,0 +1,436 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ay-3-8912:TDA7088 U?
+U 1 1 5F2C05EF
+P 5850 3150
+F 0 "U?" H 6050 4000 50  0000 C CNN
+F 1 "TDA7088" H 5750 4000 50  0000 C CNN
+F 2 "" H 5850 3150 50  0001 C CNN
+F 3 "" H 5850 3150 50  0001 C CNN
+	1    5850 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F3100BD
+P 5350 2450
+F 0 "C?" H 5400 2350 50  0000 R CNN
+F 1 "3.9nF" H 5450 2550 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 2300 50  0001 C CNN
+F 3 "" H 5350 2450 50  0001 C CNN
+	1    5350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F3270C0
+P 5350 2650
+F 0 "C?" H 5400 2550 50  0000 R CNN
+F 1 "330pF" H 5500 2750 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 2500 50  0001 C CNN
+F 3 "" H 5350 2650 50  0001 C CNN
+	1    5350 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F3280D9
+P 5150 2850
+F 0 "C?" H 5200 2750 50  0000 R CNN
+F 1 "82pF" H 5250 2950 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5188 2700 50  0001 C CNN
+F 3 "" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L aydongle-rescue:L_Small-Device1-zorjadnik-rescue L?
+U 1 1 5F32C44F
+P 5350 2950
+F 0 "L?" V 5535 2950 50  0000 C CNN
+F 1 "70nH" V 5444 2950 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 5350 2950 50  0001 C CNN
+F 3 "~" H 5350 2950 50  0001 C CNN
+	1    5350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F32DC35
+P 4900 2950
+F 0 "C?" H 4950 2850 50  0000 R CNN
+F 1 "68pF" H 5000 3050 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4938 2800 50  0001 C CNN
+F 3 "" H 4900 2950 50  0001 C CNN
+	1    4900 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F32E9A3
+P 4650 3100
+F 0 "C?" H 4700 3000 50  0000 R CNN
+F 1 "220pF" H 4750 3200 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 2950 50  0001 C CNN
+F 3 "" H 4650 3100 50  0001 C CNN
+	1    4650 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2850 5350 2850
+Wire Wire Line
+	5300 2850 5350 2850
+Connection ~ 5350 2850
+Wire Wire Line
+	5500 3050 5350 3050
+Wire Wire Line
+	4900 2800 5000 2800
+Wire Wire Line
+	5000 2800 5000 2850
+Wire Wire Line
+	4900 3100 5300 3100
+Wire Wire Line
+	5300 3100 5300 3050
+Wire Wire Line
+	5300 3050 5350 3050
+Connection ~ 5350 3050
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F3A57FF
+P 5150 2650
+F 0 "#PWR?" H 5150 2500 50  0001 C CNN
+F 1 "+3.3V" H 5150 2790 50  0000 C CNN
+F 2 "" H 5150 2650 50  0001 C CNN
+F 3 "" H 5150 2650 50  0001 C CNN
+	1    5150 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 2650 5150 2650
+Wire Wire Line
+	5200 2450 5150 2450
+Wire Wire Line
+	5150 2450 5150 2250
+Wire Wire Line
+	4800 3100 4900 3100
+Connection ~ 4900 3100
+$Comp
+L device:R R?
+U 1 1 5F3FE387
+P 4500 2950
+F 0 "R?" V 4600 2950 50  0000 C CNN
+F 1 "3k" V 4500 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4430 2950 50  0001 C CNN
+F 3 "" H 4500 2950 50  0001 C CNN
+	1    4500 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 2800 4900 2800
+Connection ~ 4900 2800
+$Comp
+L device:C C?
+U 1 1 5F419964
+P 5350 3250
+F 0 "C?" H 5400 3150 50  0000 R CNN
+F 1 "0.1uF" H 5450 3350 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 3100 50  0001 C CNN
+F 3 "" H 5350 3250 50  0001 C CNN
+	1    5350 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F41A155
+P 5150 3250
+F 0 "#PWR?" H 5150 3100 50  0001 C CNN
+F 1 "+3.3V" H 5150 3390 50  0000 C CNN
+F 2 "" H 5150 3250 50  0001 C CNN
+F 3 "" H 5150 3250 50  0001 C CNN
+	1    5150 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3250 5150 3250
+$Comp
+L power:GND #PWR?
+U 1 1 5F42EEFD
+P 5150 3450
+F 0 "#PWR?" H 5150 3200 50  0001 C CNN
+F 1 "GND" H 5155 3277 50  0000 C CNN
+F 2 "" H 5150 3450 50  0001 C CNN
+F 3 "" H 5150 3450 50  0001 C CNN
+	1    5150 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3450 5150 3450
+$Comp
+L device:C C?
+U 1 1 5F443A8D
+P 5350 3650
+F 0 "C?" H 5400 3550 50  0000 R CNN
+F 1 "470pF" H 5450 3750 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5388 3500 50  0001 C CNN
+F 3 "" H 5350 3650 50  0001 C CNN
+	1    5350 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F443D57
+P 5150 3650
+F 0 "#PWR?" H 5150 3500 50  0001 C CNN
+F 1 "+3.3V" H 5150 3790 50  0000 C CNN
+F 2 "" H 5150 3650 50  0001 C CNN
+F 3 "" H 5150 3650 50  0001 C CNN
+	1    5150 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 3650 5150 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5F458AE8
+P 5150 3850
+F 0 "#PWR?" H 5150 3600 50  0001 C CNN
+F 1 "GND" H 5155 3677 50  0000 C CNN
+F 2 "" H 5150 3850 50  0001 C CNN
+F 3 "" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3850 5150 3850
+$Comp
+L device:C C?
+U 1 1 5F470B72
+P 6350 2650
+F 0 "C?" H 6400 2550 50  0000 R CNN
+F 1 "180pF" H 6450 2750 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 2500 50  0001 C CNN
+F 3 "" H 6350 2650 50  0001 C CNN
+	1    6350 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F4710EC
+P 6350 2850
+F 0 "C?" H 6400 2750 50  0000 R CNN
+F 1 "3.3nF" H 6500 2950 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 2700 50  0001 C CNN
+F 3 "" H 6350 2850 50  0001 C CNN
+	1    6350 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F47348E
+P 6600 2650
+F 0 "#PWR?" H 6600 2500 50  0001 C CNN
+F 1 "+3.3V" H 6600 2790 50  0000 C CNN
+F 2 "" H 6600 2650 50  0001 C CNN
+F 3 "" H 6600 2650 50  0001 C CNN
+	1    6600 2650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2450 6250 2450
+Wire Wire Line
+	6250 2250 6250 2450
+Wire Wire Line
+	5150 2250 6250 2250
+Connection ~ 6250 2450
+Wire Wire Line
+	6500 2850 6550 2850
+Wire Wire Line
+	6550 2850 6550 2450
+Wire Wire Line
+	6250 2450 6550 2450
+Wire Wire Line
+	6500 2650 6600 2650
+$Comp
+L aydongle-rescue:L_Small-Device1-zorjadnik-rescue L?
+U 1 1 5F5391C2
+P 6350 3150
+F 0 "L?" V 6535 3150 50  0000 C CNN
+F 1 "70nH" V 6444 3150 50  0000 C CNN
+F 2 "Inductor_SMD:L_1210_3225Metric" H 6350 3150 50  0001 C CNN
+F 3 "~" H 6350 3150 50  0001 C CNN
+	1    6350 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F565E1D
+P 6700 3350
+F 0 "C?" H 6750 3250 50  0000 R CNN
+F 1 "680pF" H 6800 3450 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6738 3200 50  0001 C CNN
+F 3 "" H 6700 3350 50  0001 C CNN
+	1    6700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L device:D_Capacitance D?
+U 1 1 5F57173D
+P 6700 3050
+F 0 "D?" V 6654 3129 50  0000 L CNN
+F 1 "D_Cap" V 6745 3129 50  0000 L CNN
+F 2 "" H 6700 3050 50  0001 C CNN
+F 3 "" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F5739BD
+P 6350 3450
+F 0 "C?" H 6400 3350 50  0000 R CNN
+F 1 "22nF" H 6450 3550 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 3300 50  0001 C CNN
+F 3 "" H 6350 3450 50  0001 C CNN
+	1    6350 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F57425E
+P 6350 3850
+F 0 "C?" H 6400 3750 50  0000 R CNN
+F 1 "0.1uF" H 6450 3950 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6388 3700 50  0001 C CNN
+F 3 "" H 6350 3850 50  0001 C CNN
+	1    6350 3850
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 5F574872
+P 6800 3800
+F 0 "C?" H 6850 3700 50  0000 R CNN
+F 1 "1.8nF" H 6900 3900 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 3650 50  0001 C CNN
+F 3 "" H 6800 3800 50  0001 C CNN
+	1    6800 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F5756A9
+P 6500 3850
+F 0 "#PWR?" H 6500 3700 50  0001 C CNN
+F 1 "+3.3V" H 6500 3990 50  0000 C CNN
+F 2 "" H 6500 3850 50  0001 C CNN
+F 3 "" H 6500 3850 50  0001 C CNN
+	1    6500 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3650 6800 3650
+$Comp
+L device:R R?
+U 1 1 5F5A147D
+P 7000 3800
+F 0 "R?" V 7100 3800 50  0000 C CNN
+F 1 "22k" V 7000 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6930 3800 50  0001 C CNN
+F 3 "" H 7000 3800 50  0001 C CNN
+	1    7000 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 3650 7000 3650
+Connection ~ 6800 3650
+Wire Wire Line
+	6800 3950 7000 3950
+$Comp
+L power:GND #PWR?
+U 1 1 5F5CD645
+P 7000 3950
+F 0 "#PWR?" H 7000 3700 50  0001 C CNN
+F 1 "GND" H 7005 3777 50  0000 C CNN
+F 2 "" H 7000 3950 50  0001 C CNN
+F 3 "" H 7000 3950 50  0001 C CNN
+	1    7000 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 3950
+Wire Wire Line
+	6200 3050 6350 3050
+Wire Wire Line
+	6200 3250 6350 3250
+$Comp
+L aydongle-rescue:+3.3V-power1-zorjadnik-rescue #PWR?
+U 1 1 5F686551
+P 6800 3550
+F 0 "#PWR?" H 6800 3400 50  0001 C CNN
+F 1 "+3.3V" H 6800 3690 50  0000 C CNN
+F 2 "" H 6800 3550 50  0001 C CNN
+F 3 "" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	0    1    1    0   
+$EndComp
+Connection ~ 6350 3250
+Connection ~ 6350 3050
+Wire Wire Line
+	6350 3050 6500 3050
+Wire Wire Line
+	6500 3050 6500 2900
+Wire Wire Line
+	6550 3250 6550 3450
+Wire Wire Line
+	6350 3250 6550 3250
+Wire Wire Line
+	6500 3450 6550 3450
+Connection ~ 6550 3450
+Wire Wire Line
+	6550 3450 6550 3550
+Wire Wire Line
+	6550 3550 6700 3550
+Wire Wire Line
+	6500 2900 6700 2900
+Wire Wire Line
+	6700 3500 6700 3550
+Connection ~ 6700 3550
+Wire Wire Line
+	6700 3550 6800 3550
+$Comp
+L device:R R?
+U 1 1 5F79EAEC
+P 6900 3200
+F 0 "R?" V 7000 3200 50  0000 C CNN
+F 1 "5.6k" V 6900 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6830 3200 50  0001 C CNN
+F 3 "" H 6900 3200 50  0001 C CNN
+	1    6900 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6700 3200 6750 3200
+Connection ~ 6700 3200
+Wire Wire Line
+	7050 3200 7150 3200
+Wire Wire Line
+	7000 3650 7150 3650
+Connection ~ 7000 3650
+Text Label 7050 3200 0    50   ~ 0
+0-3V_TUNE
+Text Label 7050 3650 0    50   ~ 0
+OUTPUT
+$EndSCHEMATC

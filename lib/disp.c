@@ -4,6 +4,7 @@
 #include "../libopencm3/include/libopencm3/stm32/gpio.h"
 #include "board.h"
 #include "disp.h"
+#include "mv.h"
 
 void i2c_write_w_ones(uint32_t i2c, int addr, uint8_t *data, uint8_t n, uint16_t fillSize);
 
@@ -40,71 +41,62 @@ void sdInit()
                                   (uint8_t)SET_DISPLAY_CLOCK,
                                   (uint8_t)DISPLAY_MAX_FREQ,
                                   (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_DISPLAY_OFFSET,
-                                        (uint8_t)DISP_NULL,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_NULL_START_LINE,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_NULL_PAGE,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)NO_COL_REMAP,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_NORMAL_SCAN_DIR,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_COM_PIN_CONFIG,
-                                        (uint8_t)DEFAULT_COM_PIN,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_CONTRAST,
-                                        (uint8_t)INIT_CONTRAST,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_DESELECT_LEVEL,
-                                        (uint8_t)DEFAULT_DESELECT,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_MEMORY_ADDRESSING_MODE,
-                                        (uint8_t)HORISONTAL_ADDRESSING,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_DISPLAY_PRE_CHARGE,
-                                        (uint8_t)DEFAULT_PRE_CHARGE,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)DISPLAY_ON,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_NON_INVERSE,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_CHARGE_PUMP,
-                                        (uint8_t)ENABLE_CHARGE_PUMP,
-                                        (uint8_t)COMMAND_CONTROL_BYTE,
-                                        (uint8_t)SET_NORMAL_MODE };
+                                  (uint8_t)SET_DISPLAY_OFFSET,
+                                  (uint8_t)DISP_NULL,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_NULL_START_LINE,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_NULL_PAGE,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)NO_COL_REMAP,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_NORMAL_SCAN_DIR,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_COM_PIN_CONFIG,
+                                  (uint8_t)DEFAULT_COM_PIN,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_CONTRAST,
+                                  (uint8_t)INIT_CONTRAST,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_DESELECT_LEVEL,
+                                  (uint8_t)DEFAULT_DESELECT,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_MEMORY_ADDRESSING_MODE,
+                                  (uint8_t)HORISONTAL_ADDRESSING,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_DISPLAY_PRE_CHARGE,
+                                  (uint8_t)DEFAULT_PRE_CHARGE,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)DISPLAY_ON,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_NON_INVERSE,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_CHARGE_PUMP,
+                                  (uint8_t)ENABLE_CHARGE_PUMP,
+                                  (uint8_t)COMMAND_CONTROL_BYTE,
+                                  (uint8_t)SET_NORMAL_MODE };
     uint8_t empty;
     i2c_transfer7(DISPI2C, SD_ADDR, initSeq, initSize, &empty, 0);
 //             dma send seq
 }
 
-/*
+
 void fullSizeXbmToDispHorAddr(uint8_t *in, uint8_t *out)
 {
-    const uint8_t xCol = 16;
-    uint8_t outN = 0;
-    uint8_t inN = 0;
-    for(int page=0 ; page<DISP_PAGE ; ++page)
+    for(int i=0 ; i<DISP_RAM_SIZE*8 ; ++i)
     {
-        for(int col=0 ; col<DISP_COL ; ++col) {
-            outN = page*DISP_COL+col;
-            inN  = xCol*page*8;
-            for(int i=0; i<8; ++i) out[outN] |= in[inN]
-        }
+        out[(i>>7) + (i&0x3f)] = (in[i>>3] >> (i&0x07)) << ((i>>7)&0x07)
     }
-    for(int i=0 ; i<DISP_RAM_SIZE ; ++i) {
-        for(int j=0 ; j<8 ; ++j) dispBuffer[i] |= array[xCol*j + i] & (1 << );
-    }
-    ;
 }
 
-void dispTransfer()
+void dispTransferBlocking()
 {
-    ;
+    fullSizeXbmToDispHorAddr(, dispData);
+    dispData[0] = RAM_CONTROL_BYTE;
+    i2c_transfer7(DISPI2C, SD_ADDR, dispData, DISP_RAM_SIZE+1, &empty, 0);
 }
 
-*/
+
 
 void flashlight()
 {

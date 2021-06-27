@@ -25,17 +25,12 @@ volatile struct ayStruct {
 
 void ayInterface(void);
 
-uint32_t im2cr;
-uint32_t div;
-uint32_t div1;
-uint32_t hzhz;
 void initAy()
 {
     // сперва порты
     gpio_set_mode(AY_DATA_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AY_DATA_IOS);
     gpio_set_mode(AY_SERV_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AY_BC1 | AY_BDIR | AY_RESET);
     gpio_set_mode(AY_SERV_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_ALTFN_PUSHPULL, AY_CLOCK);
-//    gpio_set_mode(AY_SERV_PORT, GPIO_MODE_OUTPUT_50_MHZ, GPIO_CNF_OUTPUT_PUSHPULL, AY_CLOCK);
 
     gpio_clear(AY_SERV_PORT, AY_RESET);
 
@@ -48,16 +43,12 @@ void initAy()
     TIM1_CCER  = (uint32_t) TIM_CCER_CC2NE;
     TIM1_BDTR  = (uint32_t) TIM_BDTR_MOE;
     TIM1_CR1  |= (uint32_t) TIM_CR1_CEN;
-
     // data clock
     TIM2_CR1   = (uint32_t) TIM_CR1_CKD_CK_INT;
     TIM2_PSC   = (uint32_t) (((uint32_t)TIMERSHZ)/((uint32_t)COMMUNICATIONHZ)) - 1;
     TIM2_ARR   = (uint32_t) 1;
     TIM2_DIER  = (uint32_t) TIM_DIER_UIE;
     TIM2_CR1  |= (uint32_t) TIM_CR1_CEN;
-
-
-    div = TIM2_PSC;
     nvic_enable_irq(NVIC_TIM2_IRQ);
     nvic_set_priority(NVIC_TIM2_IRQ, 0x00);
 
@@ -77,19 +68,16 @@ void aySend(uint8_t addr, uint8_t data)
     } else {
         ayData.state = WRITE;
     }
-
     ayData.addr = 0x0f & addr;
     ayData.data = data;
 
     nvic_enable_irq(NVIC_TIM2_IRQ);
 }
 
-uint32_t timeoutt = 0xee;
 void aySendBlocking(uint8_t addr, uint8_t data)
 {
     uint32_t timeout = (uint32_t)1e7;
     while( (ayData.state != COMPLETE) && (--timeout > 1)  );
-    timeoutt = timeout;
     aySend(addr,data);
 }
 
@@ -123,7 +111,6 @@ void ayInterface()
             break;
     }
 }
-
 
 void tim2_isr()
 {
